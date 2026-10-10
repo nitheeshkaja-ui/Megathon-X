@@ -10,15 +10,18 @@ from flask_cors import CORS
 from dotenv import load_dotenv
 from werkzeug.security import generate_password_hash, check_password_hash
 
-load_dotenv()
+# Load environment variables from backend/.env
+load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
 app = Flask(__name__)
 CORS(app)
 
-# Local-development OTP only. No SMS is sent.
+# Demo-only OTP storage. OTPs are not sent by SMS.
 OTP_STORE = {}
 OTP_LOCK = threading.Lock()
 
+
+# ---------------- DATABASE ----------------
 
 def get_db_connection():
     return mysql.connector.connect(
@@ -29,27 +32,37 @@ def get_db_connection():
     )
 
 
-def error_response(message, status=400):
-    return jsonify({"success": False, "message": message}), status
+def close_db(cursor, connection):
+    if cursor:
+        cursor.close()
 
+    if connection and connection.is_connected():
+        connection.close()
+
+
+# ---------------- HELPERS ----------------
 
 def get_data():
     return request.get_json(silent=True) or {}
 
 
+def error_response(message, status=400):
+    return jsonify({
+        "success": False,
+        "message": message
+    }), status
+
+
 def normalize_phone(value):
     phone = re.sub(r"[\s-]", "", str(value or ""))
+
     if not re.fullmatch(r"\+?\d{7,15}", phone):
         return None
+
     return phone
 
 
-def close_db(cursor, connection):
-    if cursor:
-        cursor.close()
-    if connection and connection.is_connected():
-        connection.close()
-
+# ---------------- HOME AND HEALTH ----------------
 
 @app.route("/")
 def home():
@@ -61,30 +74,39 @@ def home():
 @app.route("/api/health")
 def health():
     connection = None
+
     try:
         connection = get_db_connection()
+
         return jsonify({
             "backend": "running",
             "database": "connected"
         })
+
     except mysql.connector.Error:
-        app.logger.exception("Database health check failed")
+        app.logger.exception("Health check failed")
+
         return jsonify({
             "backend": "running",
             "database": "disconnected"
         }), 500
+
     finally:
         if connection and connection.is_connected():
             connection.close()
 
 
+# ---------------- BRANCHES ----------------
+
 @app.route("/api/branches")
 def get_branches():
     connection = None
     cursor = None
+
     try:
         connection = get_db_connection()
         cursor = connection.cursor(dictionary=True)
+
         cursor.execute("""
             SELECT
                 br.branch_id,
@@ -98,13 +120,18 @@ def get_branches():
             WHERE b.is_active = 1
             ORDER BY b.bank_name, br.branch_name
         """)
+
         return jsonify(cursor.fetchall())
+
     except mysql.connector.Error:
         app.logger.exception("Branch query failed")
         return error_response("Unable to load branches.", 500)
+
     finally:
         close_db(cursor, connection)
 
+
+# ---------------- DEMO OTP ----------------
 
 @app.route("/api/auth/send-demo-otp", methods=["POST"])
 def send_demo_otp():
@@ -114,7 +141,6 @@ def send_demo_otp():
     if not phone:
         return error_response("Enter a valid phone number.")
 
-    # This is a demonstration code, not identity verification.
     otp = f"{secrets.randbelow(1000000):06d}"
 
     with OTP_LOCK:
@@ -126,6 +152,8 @@ def send_demo_otp():
         "demo_otp": otp
     })
 
+
+# ---------------- CUSTOMER REGISTRATION ----------------
 
 @app.route("/api/auth/register", methods=["POST"])
 def register():
@@ -148,28 +176,42 @@ def register():
 
     if not full_name or len(full_name) > 120:
         return error_response("Enter your full name.")
+
     if not phone:
         return error_response("Enter a valid phone number.")
+
     if len(email) > 150 or not re.fullmatch(
         r"[^@\s]+@[^@\s]+\.[^@\s]+", email
     ):
         return error_response("Enter a valid email address.")
+
     if len(password) < 8:
-        return error_response("Password must contain at least 8 characters.")
+        return error_response(
+            "Password must contain at least 8 characters."
+        )
+
     if password != confirm_password:
         return error_response("Passwords do not match.")
+
     if not otp:
         return error_response("Enter the demo OTP.")
+
     if bool(customer_ref) != bool(account_number):
         return error_response(
-            "Enter both customer reference and account number to link an account."
+            "Enter both customer reference and account number "
+            "to link an account."
         )
 
     with OTP_LOCK:
         expected_otp = OTP_STORE.get(phone)
-        if not expected_otp or not secrets.compare_digest(otp, expected_otp):
-            return error_response("Invalid OTP. Generate a new demo OTP.")
-        # One-time use within this local demo.
+
+        if not expected_otp or not secrets.compare_digest(
+            otp, expected_otp
+        ):
+            return error_response(
+                "Invalid OTP. Generate a new demo OTP."
+            )
+
         del OTP_STORE[phone]
 
     connection = None
@@ -185,6 +227,7 @@ def register():
             FROM branches
             WHERE branch_id = %s
         """, (branch_id,))
+
         branch = cursor.fetchone()
 
         if not branch:
@@ -197,10 +240,12 @@ def register():
             WHERE username = %s OR email = %s
             LIMIT 1
         """, (phone, email))
+
         if cursor.fetchone():
             connection.rollback()
             return error_response(
-                "This phone number or email is already registered.", 409
+                "This phone number or email is already registered.",
+                409
             )
 
         if account_number:
@@ -221,6 +266,7 @@ def register():
                   AND c.customer_ref = %s
                 FOR UPDATE
             """, (account_number, customer_ref))
+
             linked = cursor.fetchone()
 
             if not linked or linked["account_status"] != "Active":
@@ -230,6 +276,7 @@ def register():
                 )
 
             saved_phone = linked.get("phone_number")
+
             if saved_phone and saved_phone != phone:
                 connection.rollback()
                 return error_response(
@@ -237,10 +284,11 @@ def register():
                 )
 
             saved_email = linked.get("email")
+
             if saved_email and saved_email.lower() != email:
                 connection.rollback()
                 return error_response(
-                    "Use the email address associated with this customer profile."
+                    "Use the email address associated with this profile."
                 )
 
             customer_id = linked["customer_id"]
@@ -261,11 +309,12 @@ def register():
                 WHERE phone_number = %s OR email = %s
                 LIMIT 1
             """, (phone, email))
+
             if cursor.fetchone():
                 connection.rollback()
                 return error_response(
-                    "A customer profile with this phone or email already exists. "
-                    "If you already have a bank account, use the account-linking option.",
+                    "A customer profile already exists. "
+                    "If you have a bank account, use account linking.",
                     409
                 )
 
@@ -323,27 +372,45 @@ def register():
     except mysql.connector.IntegrityError:
         if connection:
             connection.rollback()
+
         return error_response(
             "A matching record already exists. Check your phone and email.",
             409
         )
+
     except mysql.connector.Error:
         if connection:
             connection.rollback()
+
         app.logger.exception("Registration database error")
-        return error_response("Registration failed due to a database error.", 500)
+
+        return error_response(
+            "Registration failed due to a database error.", 500
+        )
+
     finally:
         close_db(cursor, connection)
 
 
+# ---------------- LOGIN ----------------
+
 @app.route("/api/auth/login", methods=["POST"])
 def login():
     data = get_data()
-    phone = normalize_phone(data.get("phone_number"))
+
+    identifier = str(
+        data.get("phone_number")
+        or data.get("email")
+        or data.get("username")
+        or ""
+    ).strip()
+
     password = str(data.get("password", ""))
 
-    if not phone or not password:
-        return error_response("Enter your phone number and password.")
+    if not identifier or not password:
+        return error_response(
+            "Enter your phone number or email and password."
+        )
 
     connection = None
     cursor = None
@@ -351,6 +418,7 @@ def login():
     try:
         connection = get_db_connection()
         cursor = connection.cursor(dictionary=True)
+
         cursor.execute("""
             SELECT
                 u.user_id,
@@ -366,21 +434,27 @@ def login():
                 r.role_name
             FROM users u
             JOIN roles r ON r.role_id = u.role_id
-            WHERE u.username = %s
+            WHERE u.username = %s OR u.email = %s
             LIMIT 1
-        """, (phone,))
+        """, (identifier, identifier))
+
         user = cursor.fetchone()
 
         if (
             not user
             or not user["is_active"]
-            or not check_password_hash(user["password_hash"], password)
+            or not check_password_hash(
+                user["password_hash"], password
+            )
         ):
-            return error_response("Invalid phone number or password.", 401)
+            return error_response(
+                "Invalid phone number/email or password.", 401
+            )
 
         if user["role_id"] != 1:
             return error_response(
-                "Please use the sign-in page for your account type.", 403
+                "Please use the sign-in page for your account type.",
+                403
             )
 
         return jsonify({
@@ -400,18 +474,26 @@ def login():
 
     except mysql.connector.Error:
         app.logger.exception("Login database error")
-        return error_response("Login failed due to a database error.", 500)
+
+        return error_response(
+            "Login failed due to a database error.", 500
+        )
+
     finally:
         close_db(cursor, connection)
 
+
+# ---------------- DASHBOARD SUMMARY ----------------
 
 @app.route("/api/dashboard/summary")
 def dashboard_summary():
     connection = None
     cursor = None
+
     try:
         connection = get_db_connection()
         cursor = connection.cursor(dictionary=True)
+
         cursor.execute("""
             SELECT
                 (SELECT COUNT(*) FROM banks) AS total_banks,
@@ -419,21 +501,31 @@ def dashboard_summary():
                 (SELECT COUNT(*) FROM accounts) AS total_accounts,
                 (SELECT COUNT(*) FROM transactions) AS total_transactions
         """)
+
         return jsonify(cursor.fetchone())
+
     except mysql.connector.Error:
         app.logger.exception("Dashboard summary failed")
-        return error_response("Unable to load dashboard summary.", 500)
+
+        return error_response(
+            "Unable to load dashboard summary.", 500
+        )
+
     finally:
         close_db(cursor, connection)
 
+
+# ---------------- BANKS ----------------
 
 @app.route("/api/banks")
 def get_banks():
     connection = None
     cursor = None
+
     try:
         connection = get_db_connection()
         cursor = connection.cursor(dictionary=True)
+
         cursor.execute("""
             SELECT
                 b.bank_id,
@@ -447,13 +539,21 @@ def get_banks():
             GROUP BY b.bank_id, b.bank_name
             ORDER BY b.bank_id
         """)
+
         return jsonify(cursor.fetchall())
+
     except mysql.connector.Error:
         app.logger.exception("Banks query failed")
-        return error_response("Unable to load banks.", 500)
+
+        return error_response(
+            "Unable to load banks.", 500
+        )
+
     finally:
         close_db(cursor, connection)
 
+
+# ---------------- START SERVER ----------------
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
