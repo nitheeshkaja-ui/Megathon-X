@@ -1,0 +1,904 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 2
+/Kids [ 4 0 R 11 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 7386
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 45.68504 781.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F2 17 Tf 20 TL 15.33826 0 Td (MegathonX \(IIIT-Hyd\) \227 Green Customer Insights Platform) Tj T* -15.33826 0 Td ET
+Q
+Q
+q
+1 0 0 1 45.68504 765.874 cm
+q
+.501961 .501961 .501961 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL 85.18276 0 Td (High-Level Team Idea, Abstract and Proposed Approach \227 Lloyds Problem Statement 1) Tj T* -85.18276 0 Td ET
+Q
+Q
+q
+1 0 0 1 45.68504 744.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 11.5 Tf 14 TL (1. Abstract) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 686.374 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 44.3 Tm /F1 8.2 Tf 10.5 TL (Our idea is a simple AI-powered green banking platform that understands a customer's complete financial behaviour and suggests suitable) Tj T* (green opportunities. The system uses the customer's transaction history, bank usage and other available customer data to identify) Tj T* (spending patterns, estimate the customer's interest in green products, calculate possible environmental impact, and explain the) Tj T* (recommendation in simple language. It also compares the customer's current financial situation with the suggested green option so the) Tj T* (customer can understand both the possible money impact and pollution impact before taking action.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 660.374 cm
+q
+BT 1 0 0 1 5 12 Tm 10 TL /F2 8 Tf 0 0 0 rg (Core idea:) Tj /F1 8 Tf ( Understand the customer ) Tj /F3 8 Tf 10 TL (\256) Tj /F1 8 Tf 10 TL ( classify transactions ) Tj /F3 8 Tf 10 TL (\256) Tj /F1 8 Tf 10 TL ( find green opportunities ) Tj /F3 8 Tf 10 TL (\256) Tj /F1 8 Tf 10 TL ( estimate financial and environmental impact ) Tj /F3 8 Tf 10 TL (\256) Tj /F1 8 Tf 10 TL T* (explain why ) Tj /F3 8 Tf 10 TL (\256) Tj /F1 8 Tf 10 TL ( show the better possible path.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 641.374 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 11.5 Tf 14 TL (2. Three User Dashboards) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.02362 594.774 cm
+q
+.827451 .827451 .827451 rg
+n 0 43.6 493.2283 -17.2 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 5 30.4 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F2 7.4 Tf 9.2 TL (Customer) Tj T* ET
+Q
+Q
+q
+1 0 0 1 169.4094 30.4 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F2 7.4 Tf 9.2 TL (Bank Officer) Tj T* ET
+Q
+Q
+q
+1 0 0 1 333.8189 30.4 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F2 7.4 Tf 9.2 TL (Lloyd Employee) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 4 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 11 Tm /F1 7.4 Tf 9.2 TL (Own profile and personalised green) Tj T* (recommendations.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 169.4094 13.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (Customers using the officer's bank.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 333.8189 4 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 11 Tm /F1 7.4 Tf 9.2 TL (All participating banks, officers and their) Tj T* (customers.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.501961 .501961 .501961 RG
+.5 w
+n 0 43.6 m 493.2283 43.6 l S
+n 0 0 m 493.2283 0 l S
+n 0 0 m 0 43.6 l S
+n 493.2283 0 m 493.2283 43.6 l S
+n 0 26.4 m 493.2283 26.4 l S
+n 164.4094 0 m 164.4094 43.6 l S
+n 328.8189 0 m 328.8189 43.6 l S
+Q
+Q
+Q
+q
+1 0 0 1 45.68504 575.774 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 11.5 Tf 14 TL (3. Customer Flow) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 559.274 cm
+q
+BT 1 0 0 1 0 2.3 Tm 10.5 TL /F1 8.2 Tf 0 0 0 rg (\177 ) Tj /F2 8.2 Tf (Sign-up \227 Interface 1:) Tj /F1 8.2 Tf ( Full name, phone number, email, password and re-enter password.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 542.774 cm
+q
+BT 1 0 0 1 0 2.3 Tm 10.5 TL /F1 8.2 Tf 0 0 0 rg (\177 ) Tj /F2 8.2 Tf (Sign-up \227 Interface 2:) Tj /F1 8.2 Tf ( Bank name and phone number, with an ) Tj /F2 8.2 Tf (Add bank account) Tj /F1 8.2 Tf ( option so a customer can add another bank.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 526.274 cm
+q
+BT 1 0 0 1 0 2.3 Tm 10.5 TL /F1 8.2 Tf 0 0 0 rg (\177 ) Tj /F2 8.2 Tf (Account storage:) Tj /F1 8.2 Tf ( Store the customer's sign-up details and link the full name, phone number and password for later login.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 509.774 cm
+q
+BT 1 0 0 1 0 2.3 Tm 10.5 TL /F1 8.2 Tf 0 0 0 rg (\177 ) Tj /F2 8.2 Tf (Login:) Tj /F1 8.2 Tf ( Full name + phone number + password must match the stored credentials. Otherwise show ) Tj /F2 8.2 Tf (Incorrect credentials) Tj /F1 8.2 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 493.274 cm
+q
+BT 1 0 0 1 0 2.3 Tm 10.5 TL /F1 8.2 Tf 0 0 0 rg (\177 ) Tj /F2 8.2 Tf (Customer home:) Tj /F1 8.2 Tf ( Show the user's details, transaction categories, green opportunities, sustainability impact and explanations.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 474.274 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 11.5 Tf 14 TL (4. Main Customer Features) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 457.774 cm
+q
+BT 1 0 0 1 0 2.3 Tm 10.5 TL /F1 8.2 Tf 0 0 0 rg (\177 ) Tj /F2 8.2 Tf (Transaction Category:) Tj /F1 8.2 Tf ( Analyse the customer's expenditure and place transactions into the required sustainability categories.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 441.274 cm
+q
+BT 1 0 0 1 0 2.3 Tm 10.5 TL /F1 8.2 Tf 0 0 0 rg (\177 ) Tj /F2 8.2 Tf (Opportunity Detection:) Tj /F1 8.2 Tf ( Identify suitable green opportunities and display them in priority order.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 424.774 cm
+q
+BT 1 0 0 1 0 2.3 Tm 10.5 TL /F1 8.2 Tf 0 0 0 rg (\177 ) Tj /F2 8.2 Tf (Sustainability Impact:) Tj /F1 8.2 Tf ( Estimate and display the environmental impact of the current behaviour and the suggested green path.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 408.274 cm
+q
+BT 1 0 0 1 0 2.3 Tm 10.5 TL /F1 8.2 Tf 0 0 0 rg (\177 ) Tj /F2 8.2 Tf (Simple Explanation:) Tj /F1 8.2 Tf ( Explain why the recommendation was made using the customer's actual evidence.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 381.274 cm
+q
+BT 1 0 0 1 0 12.8 Tm 10.5 TL /F1 8.2 Tf 0 0 0 rg (\177 ) Tj /F2 8.2 Tf (Financial Case Study:) Tj /F1 8.2 Tf ( Compare how much the customer may spend if they continue the current approach versus the suggested green) Tj T* (approach, and explain which is financially better under the stated assumptions.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 364.774 cm
+q
+BT 1 0 0 1 0 2.3 Tm 10.5 TL /F1 8.2 Tf 0 0 0 rg (\177 ) Tj /F2 8.2 Tf (Pollution Comparison:) Tj /F1 8.2 Tf ( Show estimated pollution from the current path and estimated pollution after following the suggestion.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 345.774 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 11.5 Tf 14 TL (5. Bank Officer Flow) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 297.774 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 33.8 Tm /F1 8.2 Tf 10.5 TL (The bank officer has a login-only entry. The dataset provides the bank ID and its password. The system stores the officer's full name,) Tj T* (phone number, bank name, bank ID and password linked to the bank ID. After successful login, the officer can see only customers whose) Tj T* (dataset shows usage of the same bank. The officer can view their complete available customer details and the same green-analysis) Tj T* (features available for those customers.) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+0 705.8268 595.2756 136.063 re
+f*
+0 0 0 rg
+BT
+/F2-0 17 Tf
+20.4 TL
+ET
+BT
+1 0 0 1 82.7323 790.8661 Tm
+(GIFT \050Green Insights \046 Financial Transition Platform\051) Tj
+T*
+ET
+BT
+/F2-0 10.5 Tf
+12.6 TL
+ET
+BT
+1 0 0 1 178.2843 771.0236 Tm
+(Team\072 Syneergy Seekers   \174   Team Number\072 307) Tj
+T*
+ET
+BT
+/F1-0 8.5 Tf
+10.2 TL
+ET
+0.501961 0.501961 0.501961 rg
+BT
+1 0 0 1 196.781 751.1811 Tm
+(MegathonX \050IIIT\055Hyd\051 \227 Lloyds Problem Statement 1) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/BaseFont /Symbol
+/Name /F3
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+11 0 obj
+<<
+/Contents 12 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+12 0 obj
+<<
+/Length 11844
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 45.68504 781.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F2 17 Tf 20 TL 3.038756 0 Td (MegathonX \227 Proposed AI Pipeline, Architecture and Testing) Tj T* -3.038756 0 Td ET
+Q
+Q
+q
+1 0 0 1 45.68504 762.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 11.5 Tf 14 TL (6. Lloyd Employee Flow) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 714.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 33.8 Tm /F1 8.2 Tf 10.5 TL (The Lloyd employee has a login-only entry using the Lloyd ID and password provided in the dataset. The system stores the full name,) Tj T* (phone number, Lloyd ID and password linked to the Lloyd ID. After login, the employee can see all bank officers using the platform,) Tj T* (regardless of their bank. A bank table shows participating bank names. Selecting a bank opens its customer list; selecting a customer) Tj T* (opens the customer's complete available details.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 695.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 11.5 Tf 14 TL (7. High-Level AI / Data Pipeline) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.02362 453.874 cm
+q
+.827451 .827451 .827451 rg
+n 0 239 493.2283 -14.2 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 227.3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F2 7.4 Tf 9.2 TL (Step) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.1811 227.3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F2 7.4 Tf 9.2 TL (Stage) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.2441 227.3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F2 7.4 Tf 9.2 TL (High-level purpose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 213.1 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.1811 213.1 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (Dataset + customer account data) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.2441 213.1 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (Customer, bank, transaction and product information are loaded and linked.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 198.9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.1811 198.9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (Customer identity and bank linking) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.2441 189.7 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 11 Tm /F1 7.4 Tf 9.2 TL (Use phone number, bank details and IDs to connect the correct records and control dashboard) Tj T* (access.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 175.5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.1811 175.5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (Transaction analysis) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.2441 166.3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 11 Tm /F1 7.4 Tf 9.2 TL (Read the customer's transaction history and classify spending into the required sustainability) Tj T* (categories.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 152.1 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (4) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.1811 152.1 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (Customer 360) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.2441 142.9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 11 Tm /F1 7.4 Tf 9.2 TL (Combine the customer's transactions, products, banking behaviour and other available signals) Tj T* (into one profile.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 128.7 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (5) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.1811 128.7 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (Opportunity prediction) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.2441 119.5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 11 Tm /F1 7.4 Tf 9.2 TL (ML estimates propensity for EV Finance, Green Home, Solar Finance and Paperless Banking;) Tj T* (confidence is also reported.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 105.3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (6) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.1811 105.3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (Eligibility / rules check) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.2441 96.1 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 11 Tm /F1 7.4 Tf 9.2 TL (Product eligibility follows authorised product rules; a signal or propensity alone does not mean) Tj T* (eligibility.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 81.9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (7) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.1811 81.9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (Carbon / impact engine) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.2441 72.7 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 11 Tm /F1 7.4 Tf 9.2 TL (Use documented emissions factors, formulas, baselines and assumptions to estimate potential) Tj T* (environmental impact.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 58.5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (8) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.1811 58.5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (Financial comparison) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.2441 49.3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 11 Tm /F1 7.4 Tf 9.2 TL (Create a simple current-vs-suggested scenario using the available financial data and clearly) Tj T* (stated assumptions.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 35.1 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (9) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.1811 35.1 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (Recommendation + explanation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.2441 25.9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 11 Tm /F1 7.4 Tf 9.2 TL (Rank suitable opportunities, show evidence/reason codes and let the LLM explain structured) Tj T* (results in simple language.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 11.7 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (10) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.1811 11.7 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.8 Tm /F1 7.4 Tf 9.2 TL (Dashboards) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.2441 2.5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 11 Tm /F1 7.4 Tf 9.2 TL (Show personalised customer results, bank-level customer access and Lloyd-level) Tj T* (bank/officer/customer views.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.501961 .501961 .501961 RG
+.35 w
+n 0 239 m 493.2283 239 l S
+n 0 0 m 493.2283 0 l S
+n 0 0 m 0 239 l S
+n 493.2283 0 m 493.2283 239 l S
+n 0 224.8 m 493.2283 224.8 l S
+n 0 210.6 m 493.2283 210.6 l S
+n 0 187.2 m 493.2283 187.2 l S
+n 0 163.8 m 493.2283 163.8 l S
+n 0 140.4 m 493.2283 140.4 l S
+n 0 117 m 493.2283 117 l S
+n 0 93.6 m 493.2283 93.6 l S
+n 0 70.2 m 493.2283 70.2 l S
+n 0 46.8 m 493.2283 46.8 l S
+n 0 23.4 m 493.2283 23.4 l S
+n 31.1811 0 m 31.1811 239 l S
+n 167.2441 0 m 167.2441 239 l S
+Q
+Q
+Q
+q
+1 0 0 1 45.68504 434.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 11.5 Tf 14 TL (8. Proposed System Architecture) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 376.374 cm
+q
+BT 1 0 0 1 0 44.3 Tm -0.093539 Tw 10.5 TL /F2 8.2 Tf 0 0 0 rg (Data Layer:) Tj /F1 8.2 Tf ( customer, bank, officer, product, transaction, vehicle/energy/digital data ) Tj /F3 8.2 Tf 10.5 TL (\256) Tj /F1 8.2 Tf 10.5 TL ( ) Tj /F2 8.2 Tf (Preprocessing & Feature Layer:) Tj /F1 8.2 Tf ( cleaning, linking,) Tj T* 0 Tw (transaction categories and customer features ) Tj /F3 8.2 Tf 10.5 TL (\256) Tj /F1 8.2 Tf 10.5 TL ( ) Tj /F2 8.2 Tf (AI Layer:) Tj /F1 8.2 Tf ( transaction classification + propensity models ) Tj /F3 8.2 Tf 10.5 TL (\256) Tj /F1 8.2 Tf 10.5 TL ( ) Tj /F2 8.2 Tf (Rules Layer:) Tj /F1 8.2 Tf ( product eligibility) Tj T* (and access control ) Tj /F3 8.2 Tf 10.5 TL (\256) Tj /F1 8.2 Tf 10.5 TL ( ) Tj /F2 8.2 Tf (Impact Layer:) Tj /F1 8.2 Tf ( deterministic carbon calculation + financial scenario comparison ) Tj /F3 8.2 Tf 10.5 TL (\256) Tj /F1 8.2 Tf 10.5 TL ( ) Tj /F2 8.2 Tf (Recommendation Layer:) Tj /F1 8.2 Tf ( priority) Tj T* (ranking + reason codes ) Tj /F3 8.2 Tf 10.5 TL (\256) Tj /F1 8.2 Tf 10.5 TL ( ) Tj /F2 8.2 Tf (LLM Layer:) Tj /F1 8.2 Tf ( simple explanation from structured outputs only ) Tj /F3 8.2 Tf 10.5 TL (\256) Tj /F1 8.2 Tf 10.5 TL ( ) Tj /F2 8.2 Tf (Presentation Layer:) Tj /F1 8.2 Tf ( Customer / Bank Officer /) Tj T* (Lloyd dashboards + API.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 357.374 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 11.5 Tf 14 TL (9. Rough Testing Mechanism) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 342.174 cm
+q
+BT 1 0 0 1 0 1.8 Tm 9.2 TL /F1 7.4 Tf 0 0 0 rg (\177 ) Tj /F2 7.4 Tf (Login testing:) Tj /F1 7.4 Tf ( correct credentials should open the correct dashboard; wrong credentials should be rejected.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 317.774 cm
+q
+BT 1 0 0 1 0 11 Tm 9.2 TL /F1 7.4 Tf 0 0 0 rg (\177 ) Tj /F2 7.4 Tf (Access-control testing:) Tj /F1 7.4 Tf ( a bank officer must see only customers belonging to the officer's bank; a Lloyd employee can view all participating banks and) Tj T* (their officers/customers.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 302.574 cm
+q
+BT 1 0 0 1 0 1.8 Tm 9.2 TL /F1 7.4 Tf 0 0 0 rg (\177 ) Tj /F2 7.4 Tf (Transaction testing:) Tj /F1 7.4 Tf ( manually check sample transactions and measure classification correctness and consistency.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 287.374 cm
+q
+BT 1 0 0 1 0 1.8 Tm 9.2 TL /F1 7.4 Tf 0 0 0 rg (\177 ) Tj /F2 7.4 Tf (ML testing:) Tj /F1 7.4 Tf ( split customer-level data into training, validation and test sets; compare the model with a simple baseline and report relevant metrics.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 272.174 cm
+q
+BT 1 0 0 1 0 1.8 Tm 9.2 TL /F1 7.4 Tf 0 0 0 rg (\177 ) Tj /F2 7.4 Tf (Recommendation testing:) Tj /F1 7.4 Tf ( test normal cases, missing data, conflicting signals and cases where a product should not be recommended.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 256.974 cm
+q
+BT 1 0 0 1 0 1.8 Tm 9.2 TL /F1 7.4 Tf 0 0 0 rg (\177 ) Tj /F2 7.4 Tf (Impact testing:) Tj /F1 7.4 Tf ( verify formulas, units, emissions factors, assumptions and repeatability of carbon estimates.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 232.574 cm
+q
+BT 1 0 0 1 0 11 Tm 9.2 TL /F1 7.4 Tf 0 0 0 rg (\177 ) Tj /F2 7.4 Tf (Explanation testing:) Tj /F1 7.4 Tf ( check that the LLM explanation matches the structured prediction, evidence, impact and product mapping and does not invent) Tj T* (facts.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 217.374 cm
+q
+BT 1 0 0 1 0 1.8 Tm 9.2 TL /F1 7.4 Tf 0 0 0 rg (\177 ) Tj /F2 7.4 Tf (End-to-end testing:) Tj /F1 7.4 Tf ( trace a customer from raw transactions ) Tj /F3 7.4 Tf 9.2 TL (\256) Tj /F1 7.4 Tf 9.2 TL ( prediction ) Tj /F3 7.4 Tf 9.2 TL (\256) Tj /F1 7.4 Tf 9.2 TL ( eligibility ) Tj /F3 7.4 Tf 9.2 TL (\256) Tj /F1 7.4 Tf 9.2 TL ( impact ) Tj /F3 7.4 Tf 9.2 TL (\256) Tj /F1 7.4 Tf 9.2 TL ( recommendation ) Tj /F3 7.4 Tf 9.2 TL (\256) Tj /F1 7.4 Tf 9.2 TL ( explanation ) Tj /F3 7.4 Tf 9.2 TL (\256) Tj /F1 7.4 Tf 9.2 TL ( dashboard.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 198.374 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 11.5 Tf 14 TL (10. Responsible AI and Key Principles) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 164.774 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 20.2 Tm /F1 7.4 Tf 9.2 TL (The platform will treat all impact values as estimates, document assumptions and data sources, avoid using real confidential banking data, and keep the) Tj T* -0.046372 Tw (roles of ML, rules, the carbon engine and the LLM separate. Propensity will not be treated as financial eligibility. The system will also provide evidence and) Tj T* 0 Tw (reasons for recommendations so that users can understand why an opportunity was identified.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.68504 128.774 cm
+q
+BT 1 0 0 1 5 22 Tm 10 TL /F2 8 Tf 0 0 0 rg (Planned demo story:) Tj /F1 8 Tf ( Select one customer ) Tj /F3 8 Tf 10 TL (\256) Tj /F1 8 Tf 10 TL ( show their complete financial/behaviour profile ) Tj /F3 8 Tf 10 TL (\256) Tj /F1 8 Tf 10 TL ( show categorised spending ) Tj /F3 8 Tf 10 TL (\256) Tj /F1 8 Tf 10 TL ( show top) Tj T* (green opportunities ) Tj /F3 8 Tf 10 TL (\256) Tj /F1 8 Tf 10 TL ( open \223Why?\224 ) Tj /F3 8 Tf 10 TL (\256) Tj /F1 8 Tf 10 TL ( show financial and pollution comparison ) Tj /F3 8 Tf 10 TL (\256) Tj /F1 8 Tf 10 TL ( show estimated impact ) Tj /F3 8 Tf 10 TL (\256) Tj /F1 8 Tf 10 TL ( show next action. Then switch) Tj T* (to Bank Officer and Lloyd views to demonstrate how the same intelligence works at bank and platform level.) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+0 807.874 595.2756 34.01575 re
+f*
+0.501961 0.501961 0.501961 rg
+BT
+/F2-0 7.5 Tf
+9 TL
+ET
+BT
+1 0 0 1 39.68504 820.6299 Tm
+(GIFT \227 Syneergy Seekers) Tj
+T*
+ET
+BT
+1 0 0 1 521.4056 820.6299 Tm
+(Team 307) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000120 00000 n 
+0000000169 00000 n 
+0000000435 00000 n 
+0000007873 00000 n 
+0000007980 00000 n 
+0000008087 00000 n 
+0000008199 00000 n 
+0000008311 00000 n 
+0000008389 00000 n 
+0000008657 00000 n 
+trailer
+<<
+/Size 13
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+20555
+%%EOF
+3 1 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+ /AF [14 0 R] /Names << /EmbeddedFiles << /Names [(Content Credentials) 14 0 R] >> >> >>
+endobj
+13 0 obj
+<< /Length 24276 /Type /EmbeddedFile /Subtype /application#2Fc2pa >>
+stream
+  ^‘jumb   jumdc2pa  Ä  ™ 8õqc2pa   ^Æjumb   Gjumdc2ma  Ä  ™ 8õqurn:c2pa:dd144107-a591-49e8-8a3c-c0275bfa0a94   ûjumb   )jumdc2as  Ä  ™ 8õqc2pa.assertions   	πjumb   #jumd@À2ªäHùß*÷ÙCic2pa.icon    bfdb image/svg+xml   	wbidb<svg width="716" height="716" viewBox="0 0 716 716" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M508.749 317.399C516.777 287.314 508.991 253.884 485.389 230.282C461.788 206.681 428.36 198.895 398.273 206.923C376.231 184.928 343.39 174.956 311.148 183.596C278.906 192.234 255.45 217.292 247.36 247.361C217.291 255.451 192.233 278.91 183.595 311.149C174.957 343.391 184.927 376.232 206.924 398.274C198.896 428.359 206.683 461.789 230.284 485.391C253.885 508.992 287.313 516.779 317.401 508.75C339.442 530.745 372.286 540.717 404.525 532.079C436.767 523.441 460.223 498.384 468.313 468.315C498.383 460.224 523.44 436.766 532.078 404.526C540.716 372.285 530.747 339.443 508.749 317.402V317.399ZM470.899 244.776C486.892 260.77 493.488 282.601 490.687 303.412L415.577 260.046C412.411 258.218 408.509 258.218 405.345 260.046L317.401 310.82V277.526C317.401 275.191 318.652 273.005 320.676 271.837L387.644 233.174C414.178 218.353 448.346 222.223 470.901 244.776H470.899ZM357.837 311.144L398.275 334.491V381.185L357.837 404.532L317.398 381.185V334.491L357.837 311.144ZM264.776 269.693C265.207 239.305 285.644 211.649 316.453 203.393C338.3 197.54 360.505 202.744 377.127 215.573L302.014 258.937C298.848 260.764 296.898 264.144 296.898 267.798V369.346L268.065 352.699C266.043 351.531 264.776 349.353 264.776 347.017V269.691V269.693ZM203.391 316.454C209.244 294.608 224.854 277.978 244.276 269.999V356.73C244.276 360.384 246.226 363.763 249.392 365.591L337.337 416.365L308.503 433.013C306.481 434.181 303.961 434.188 301.939 433.02L234.971 394.357C208.868 378.789 195.138 347.261 203.391 316.454ZM244.775 470.9C228.781 454.906 222.186 433.075 224.986 412.264L300.096 455.63C303.263 457.457 307.164 457.457 310.328 455.63L398.273 404.856V438.149C398.273 440.485 397.022 442.671 394.997 443.839L328.029 482.502C301.495 497.322 267.327 493.452 244.772 470.9H244.775ZM450.897 445.982C450.466 476.371 430.029 504.027 399.22 512.283C377.373 518.136 355.168 512.932 338.547 500.102L413.659 456.738C416.826 454.911 418.775 451.532 418.775 447.877V346.329L447.609 362.977C449.631 364.145 450.897 366.323 450.897 368.659V445.985V445.982ZM512.282 399.221C506.429 421.068 490.819 437.697 471.397 445.676V358.946C471.397 355.292 469.448 351.912 466.281 350.085L378.336 299.311L407.17 282.663C409.192 281.495 411.712 281.487 413.734 282.655L480.702 321.318C506.805 336.887 520.536 368.415 512.282 399.221Z" fill="black"/>
+</svg>
+  jumb   )jumdcbor  Ä  ™ 8õqc2pa.actions.v2    ﬂcbor¢gactionsÅ§factionlc2pa.createdqdigitalSourceTypexFhttp://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMediamsoftwareAgent¢dnameegpt-6gversionegpt-6dwhenx2026-10-10T16:24:31.941343ZrallActionsIncludedÙ   §jumb   (jumdcbor  Ä  ™ 8õqc2pa.hash.data    tcbor•jexclusionsÅ¢estartRzflength^‘dnamenjumbf manifestcalgfsha256dhashX ¿Y~¶$ú∏î;⁄)†-˙¶Ë∏õœC¡á≤‚Õ[ˇ˝ëcpad@  âjumb   'jumdc2cl  Ä  ™ 8õqc2pa.claim.v2   Zcbor¶jinstanceIDx,xmp:iid:e21e08d6-a5c2-4c0b-a0b8-c9d8d2be5e0ftclaim_generator_info£dnamegChatGPTdicon¢curlx$self#jumbf=c2pa.assertions/c2pa.icondhashX u>=W1í≥®NÎL˚¡åt∑'w÷–6«e6„ÒkspecVersione2.2.0isignaturexMself#jumbf=/c2pa/urn:c2pa:dd144107-a591-49e8-8a3c-c0275bfa0a94/c2pa.signaturercreated_assertionsÉ¢curlx$self#jumbf=c2pa.assertions/c2pa.icondhashX u>=W1í≥®NÎL˚¡åt∑'w÷–6«e6„Ò¢curlx*self#jumbf=c2pa.assertions/c2pa.actions.v2dhashX (9•/ä≈Ñ≈˝˜ _1ëVˇÒ˙Çb7ÉÇ6Éú¢curlx)self#jumbf=c2pa.assertions/c2pa.hash.datadhashX ’Í÷ÿ5ï“}àfªBd˚ Lò6E∆-⁄9-OüõÍ-hdc:titleiimage.pdfcalgfsha256  P8jumb   (jumdc2cs  Ä  ™ 8õqc2pa.signature   Pcbor“ÑYË¢8$!ÇYà0ÇÑ0Çl†•¸ÈpåÚÄ1ÓDds0	*ÜHÜ˜ 0J1!0USSL.com C2PA ICA R1 202510U
+SSL Corporation10	UUS0260422155105Z270423155104Z0G10	UUS10U
+OpenAI OpCo, LLC10UOpenAI Media Service0Ç"0	*ÜHÜ˜ Ç 0Ç
+Ç ù∫jLMóÍÅâ∂—æ^XNr°ôﬂiq|Â!#”Å¢5úL£J<Ôn+øÊdÆ◊ÑKi$ZcœÍv
+ê≤e€|<ç·˛¡3wØ'ﬁ; :¥cáòÕMúø¥3D™T07F∏˝öyDsWU£c|›¨X/ÊzÆﬁ•ò√ìNHZ¯‡|§íK’l∫ ¬*»íæu‘îgµW™jöm00,◊Uaåj“S∂ x^ECûNí£ÄÒØ[—≤Î˛ãÔ∫◊7	ï´d-ô…áö¯ø.–ÁcÄñöy†7ì6£5…H…,òcÈDõ5¨πßSlúhs»
+9ÃIÛ £Çg0Çc0Uˇ0 0U#0Ä9=G‹óèØà{MsÕÂÓ§•*0o+c0a09+0Ü-http://crt-c2pa.ssl.com/SSL.com-C2PA-I-R1.cer0$+0Ühttp://ocsp-c2pa.ssl.com0U 00
++ÉË^0)U%"0 ++$
++ÉË^0UÛùM‘Àùr¯F
+vG•hOt0Uˇ¿0	+ÉË^
++ÉË^
+03	+ÉË^&$019bc403-5cd7-7669-afe6-fdb17177d4280	*ÜHÜ˜ Ç Ç8óle°7 Ò˘Ìt∫’¶[5ıglœ+fi@Õı¸“rVﬂ ï(Í¯fﬁBC=¯x†h(â≠µÓ¸ı2“å∏_ÁlÄnÎ[|ó[0Á.B∏∆pö˛˛ 	¨5F’†åIEÄ√∫íU«Zùo“Îÿyõñ:ºDê44}ÙA•3ó/.lQR
+m=I∞À«ÜXÃ‹Óû.È∆9∏3\ ⁄Ó W3T.p(J%)Oí|.“˙›g.zËPx9Q∫É:⁄à~ê#êíıbXöÂ¬®sÜû≈ÿqÈÔ\d{ëÓ7/vòxVdÁoB—}íºÖjomdÖÿˇ"ñÌπÔ≤–\Ñ}h]5[K±≈iHyÊhé†ƒaò:L¯¿$yÂ¶h‡Ô˝÷ê÷.-AduV_ìî∂°úä<∂¿ËmÛ≈CÁv,h§ÚÊÀãàïË{*r$Å=!∆cm/%Ä£ô[™)•˝GÍ·˜kÂ˚[P&m+°Ç]1ı›b®|2‹L«•,r0PÄWìÇ‚ËÆ≥ßØY4ÆrÔ*ùÆx¨‚3ÏSµ…ô“(®*7°N´¸Ã~Xõ'mE·¥*úΩ0W°1. .…‚»T€°íOæ$5ò˛/i‹∏M„ﬁ/Ëlı¡ä‚”˛rw”®+‘WóÆáÿ æì∂âYS0ÇO0Ç7†'+c»ÃM-õÑQrlÙú^2QÆﬁ0	*ÜHÜ˜ 0O1&0$USSL.com C2PA RSA Root CA 202510U
+SSL Corporation10	UUS0251222181730Z301221181730Z0J1!0USSL.com C2PA ICA R1 202510U
+SSL Corporation10	UUS0Ç"0	*ÜHÜ˜ Ç 0Ç
+Ç À:¥Õ∏úÀ)V∏yß¯kˆ˘ÿèr√¶ò≠*A⁄a.GRΩtQæ]ÏzÇ∂¿˚˙Ë'•ãË˛bÛ`Ò_H ssï‰NnÃNz5ﬁX·◊Ç‹“GCwõﬂHàyü£9§YN^‡NGóÚuB◊v=∂§"‹Ì∆o‘rFå÷Q«µ∑zÚì˘#'’ÄPuäp†hÈÁºÑ(|ú*Í)©¿/˛…vFU∞/cÍ}ûÙ∞D§@ﬁ@6\DäTkWHˇªo§’Íé¬◊|ÿºŒiø† MìE;ô.y“œûü)ªFŸxc0ñ3Qú^ìm˙Â4JXx≥)l]|∏uï<ôw!{ÿ¥JÎ⁄Õ«
+÷…¢ﬁÆó≥∂Qñ⁄íõ√≤ªPƒ˛∂§Lï]-íjObÂ‡*˜i†ú’πì ⁄—ª^O∆Ø˘)L–…ÏÎÛ≤qP{v'hë˘Pà∏w5ÿÕ°·◊”)ÁJ∆áTY$¬g≤m	5€∫Œ∏F•‡ã⁄·ßüjŒ`“ƒ˜¡ﬁsyU‡p¥ÔÍÃ«˛vâNf
+ià-Ì√F¢*‰å‘úWF-Xb’ ®˙~¯¬ŸajÀ5]†ì£≤e®/ÌÔòÁ¸~∫HÙ™°q¸ìØÍßNsài’B¿˘ÑíÖOÀT≥=:¯›)ey Cûñ∏áXñ!Ô—ë{ £Ç&0Ç"0Uˇ0ˇ 0Uˇ0)U%"0 ++$
++ÉË^0U9=G‹óèØà{MsÕÂÓ§•*0U 00
++ÉË^0U#0Ä¸*Ju:Ä˙ôcìsWÏæì∞}√{0x+l0j0$+0Ühttp://ocsp-c2pa.ssl.com0B+0Ü6http://crt-c2pa.ssl.com/SSL.com-C2PA-Root-2025-RSA.cer0	*ÜHÜ˜ Ç Œ6˙>Ôñ6-éØUfˇ{+ kVıÀ≠Ω*Å≠•¶–M£>ì‰ìi’‰å®nÊ7T‚%úÏef(<3=¢ö¢ªÕgdJÁæt!°n√´&ƒ;,⁄Uπ˝GN‡çxõ7Éƒt;≈GaÔmAr§€]CS…ñNÂ‡:ﬂ®›.—ØXó÷ÁÙ_r#<kœΩ9´åì®èßvY>·íı˜Ÿ˚Fb´nn‘àF†≥/*j_•N⁄¯‘¸ÃŸ£<©wE
+¡˘òπ9ÀÃ°q¿*Çq”‰ˆ%‚Q!m÷ﬂ‰SçoJ}é^¿∫’wy!ÅzŒÌ˜õé∂≤äBVùèkA*˛kúãÓ£(œ_ÛÈ–d÷Ó¬âKÎíœıØ¬'M∏ë°7%ôÊ˝Ä‹Ùº«7{æ¥-gX/Á√≥ãqÂDz0∂•≤u>[#~;”T¶:π«Ã3’j5zÅv/˛W⁄i¯>?ÔTèã{F√cû˙Ìƒ/pÑ+ˆVÇÙßÀ$◊l^${:Ω©X;i≥úè“ptˇãn&ª√´E«SñúGµ∆F´^ı¸àãh£5Â|jïeµ´Îπˇ∫∏‡õJG≤ŒÏ/â}ÓØúMƒ…Œı2=è˜&4˛"ãzÌ˘^^g_Q[€$V˚—Y°∑ﬁöf	∂—Ü.˙}~ïyõDf|6Öˆı£gsigTst2°itstTokensÅ°cvalYä0ÇÜ	*ÜHÜ˜†Çw0Çs10	`ÜHe 0ÅÜ*ÜHÜ˜	†wu0s
++Éø0010	`ÜHe  ’:êLHv€˜êM˙ı¡»·⁄YGØ†(2é
+÷W*@EP„Ñ¢[‡20261010162440.575971Z0ÄO§Ûhäg^†Çf0Çˆ0Ç^†a€F(2äåçJ∑ø˛`„l?q∑0	*ÜHÜ˜ 0{10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Issuing CA0260408174626Z370709174626Z0u10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Leaf0Ç¢0	*ÜHÜ˜ Çè 0ÇäÇÅ Í ≈≠î˝˝'ü«xßa ˇ)a*˚°àÕ_®¢óùâ/ãë»º∞ñê=UÇ¡ñé6j≠âiËê€,D2É®
+ÕwÂ5ËÓ®d[˛∏‡éùÁ °(√5›ß7È"˜	Móö¥Ñs¿.|©PG(†¥i∞á)zY˛5B˘ŸiRJ 7ÚhÃÒ-∑Çñ KF\=§Ü∏KEf8¢NM' ï∫uÃNájüt√ $_ƒ~\Æ˛ÛïÌ ëﬂ<ıÜõ*^÷–›…˙»M√…ÑZI,‰8s`R∏LÓ∆Û∑∂ÿ›j©Œ ∫]÷ƒ\5dÚ#S?bée]p+‘…k	ÅERËWÌZF]⁄]vú%yhÉQ§òÑuëròUˇÿ„Cb±Ìig'Aº≈èÚj+ÉIË·-4ª9ØgΩ¥ï»≤ΩEgÕràî_UK,≠ØÌ•Ù$Øw>ÉädQèëå9ñK∞=Æ˙ô°>å=æ6°.ıcµ £x0v0Uˇ0 0Uˇ¿0U%ˇ0
++0U§'TÇ¢äÄ{=≈ÜÕ?pŸ¬ÉôQx0U#0ÄÚ∞«T=#CÖ‹ s–rÄ=∏®0	*ÜHÜ˜ ÇÅ  ˚$OA¿¿ºò≤2 ç ôH5OƒFV~ß>?∂•#˘*H>‡QùE@x¡ªÉNìP…õ'ñhﬂMŒÚˆ“y´ÔÍ¡⁄?ıòYÊpÕâÙÓGã™ÀÏˇå~·FÿëÊú∏‰4Fˇa“x¯}89„RÌ_fËs¿ r;‰®´éÜ*£7!˘;ﬂ{\TÿL«j*KœCt`Äs£…—wØá©˝µ±Ñjnøà*Œö°ö´¢ûÇH7≈cQó€R|og…iB’œı˚≠^ãê‚‡y<.Éjû•Ë%AèÖÌ‰¡†:ç˛ùRPÔáﬁ·dÕU˘! ﬂ∂)Ôü'n—∫4F´J"OÁbw›E#›a-¬1)èƒπ~y´¥W‘¡Ïœ·\{eI∞ÎM´§«'@N¶¥µèœ|√¥Cßv”^0cÓ®Æ5(td´Z5„[/:>N
+a÷0MCõˇN.∆!π>:, W0ujédK¢–	—◊†g&Amg¯pv∏%&V˘ë&'√KI0Ç~0Çf†ç ∆≈≈⁄∞ºÒNï•Íº0	*ÜHÜ˜ 0x10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Root CA0 260408174626Z21260409174626Z0{10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Issuing CA0Ç¢0	*ÜHÜ˜ Çè 0ÇäÇÅ âº‘π‚»°æaªﬁ<df~ßæúm”©0&<Ù‡k 9ﬂï4Ì©¢eH€7Ü2ÉéÃ
+J†¿Û4l†¿òÕ+ü•ÙÀ|Ÿ&ﬁ~…M¢Ôc[ëÊˆY®“˙N˘Ÿ8+ZÕ`ZòÅò®◊S∆„÷.H¨CW	ÈîÚG˘lEä`∑˜Æ/^¢5NÖ8Öiü4ù–MÿC=Õ4m¸cì¸”pªJËvËjNfI†Ì¸¯æÔö∑®w¨Ô∑8Ãπ‘*3ƒv÷@wÀ˛«]-@”ﬁã<¿÷@AôÀî?,} kR¸û P∑	GE·#U˙±OoTòïÙ}∫¯h·"z‹äëCã∂.C±b†æ $é.Ôø§—MË∏?1œ&=≈ PÍÚŸ$ dÌ’sû.px™ﬁV<˘‘Ä¢Ë≠Øˆ˚®£\Àh´D€0wÚƒ4tkUm∆á˚Ú2<ûqE˜ÏP˚˛÷1&ª–ƒMa‚B€Ø√+n_+Ê‚∞Ôç\DÕ¿s}è¢ÈΩmÇº%eÑ0iÌ £{0y0Uˇ0ˇ 0Uˇ0U%0
++0UÚ∞«T=#CÖ‹ s–rÄ=∏®0U#0ÄX¬@†<Gv+®Ên®ëñéñ»∑Ÿ‰0	*ÜHÜ˜ Ç íÏ7\ﬁlÎd⁄Æ°	0rÆ‹rı;ºz=÷∆·/ˆÉ3}ËW@NLô™k‘ôŸã€k÷L¯ –Y3”°†8\#àD$˚á·ˆì'º°ÌL_g]ˇ5´1“Ï{‘@C7O¬Ñú∫d»∞¢~ö6¯·–Ç≥PC≤‡UΩÄî»YRNJtﬁ]«EXõ∑˙0™;‹Gº’.,π8c,yZ∑›U≠=BﬂàœÒh˛s ‘Z∑ﬁ$óë¿Ág˛‹¶
+Û•F≥QœçØ_„»∏@∆Ω„˘÷Kq–d]Âd¬K¿^w—=«[ûœ{˝îîÁKQ⁄˚dÙ´5îÒˆæ~+›≤ö=P›P√ñdém´sü(;w–óÌoEO±3._FÎÉ∂©aº◊ÇÆ¯Äo¬„i0Êm|:Dí+ò-Ø‹4¡æ•*HÁá»ﬁ8µ3 „ÑPpÒ≤KﬁçOˆë‹_Ö˙ÒÊ—◊ ßÓ¥üˆ!x)Å„pXwÜ§:KóÉFË⁄¬jv…©À!Eæe±†Ü.ÄºYKMõCm¥◊Ñ‡¸’»aêCéjù√Ò!<Ñ]˛;÷ÿ#9E_q˙2˝†ÄïDµO Â√t˝‚NárÜÙQáΩ‘µ+5lí§;kjù∫˝¿;úv¬’9I⁄„î>Pj◊L‚âaùÔÎœ≈√@npz80ÇÊ0ÇŒ†P;lâå$3,è˜Oé˚}ÇÏ0	*ÜHÜ˜ 0x10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Root CA0 260408174625Z21260409174625Z0x10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Root CA0Ç"0	*ÜHÜ˜ Ç 0Ç
+Ç ˆíÈ“∫≠û·¨u®Vÿ™±≥jí_ñyıí∑-$¯ø¿Ø`æ¡öÕyö‹lö˛6ö¡ò§?‰,ù∫••Ps≥
+¬˘ÛƒI/xΩ“ÏºÁ?Ùõ—Ú†a¢,â% Q˘%ú“∆/ÙâƒA˛&”m5ÕÏª5`@®ÖQæˆÓêòÒ*ÿùzkjŸ.ŸcÛÂ\)≈Ü"¡ähÕÎ8û©Pñ[#C˚8ˇB|;:°Q/%…H‹1ˇPrÓ|°wÕoÅaÛ?ønË“±¶6‰k2˚˛w®^õ\››1êLéeˇÅÀAŒ(1S CŒHn}÷d≥)‰¥.:∑TZrVWÛ®j}ÔÊa›e»H	Iô2t
+¢Ã›ì S¨#ΩÇÖ ±ÔæÌ°w Ó:F3¢ûÏØÈ1f¥fo≤âì†~ï!ŒA¯^éÈÕπ¿’3]x––'1œP0rs⁄j¬¿ìœ≠‹dáˆ˚Nàvı>Ôˇí,ôw.ˆ‹ò∂ù	:˝Ù	«è_ZÈ~H	+µäÉÚ[<,Øë¢ùA∑Rh—ø∞¿⁄O`ΩÓ)™Ìáçq\(åçà£%cEÿ¸{aèlFT;\…∞ÇØÉ»±#?ü[Ó¢◊Tµ*SÆªÖ€¶˙óûÏÑârÛz@…∂ÖXG[Ò$a9¢Lﬁÿ∆®"Úûø[L,À £f0d0Uˇ0ˇ0Uˇ0UX¬@†<Gv+®Ên®ëñéñ»∑Ÿ‰0U#0ÄX¬@†<Gv+®Ên®ëñéñ»∑Ÿ‰0	*ÜHÜ˜ Ç X¯ÅëòÚla˛»Ü÷[Ñ¶÷æ∏¶]]IÀ∏°)Õ-ù∏X˘Ñâ=<¯o’j¥*¢UígÅô^µT˚öFÄ„Q S¿¡àWﬁÔÇU~„Ù}Î&¸Éˇ!®¡¨ﬁ€ì´Õ–0v:ìùŒ™g9.Ätﬂm~v/ÈÍPAã8=lÂ‡>Ó/€dT6^æbE∂—!¥Ä<åÎ⁄ú÷J©’Te[k—X~¿IáÎÎK_í;î◊öÜˆ°YŒG8¨√∞td—¿R;°±{(k·ió¯(;'ˇÆ§û˜eÀ†ÙÍπΩîŒD‚ò±
+HhÓU©!•`è˛ ÷}—{Ü úÛ®x–∆⁄@.»Å\b®*¡˚VÁyéØÏÂ€”p˛FÃc®dÒ<ÈØ•dº^øÖ-∞Œ„π”§◊RªpãÜù˚.ø
+ˆ“U+#B+C\Ï°Ça?œqÌ∞˜óÈ‰À¬<¸¨w∑∂‹ ¡LÈâ≤≤/√~ídúµÑﬁÃñ˝â∞KµC}“È≠Ü˝Ÿ-üΩ Ó¿¥GV#|HëNgâ {b¡…^UÒˆ∆Q#WoÔáæ Fyæî±» (ùïäà&UfRÔŸK∫®ZÈ¬,≠ü√\BÛ°ı'dyqå
+Zû˝π˘Eyp·jµ7ñéX˝EøT%åÉ=Ÿ&3#–Xw¶∏1Çh0Çd0Åì0{10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Issuing CAa€F(2äåçJ∑ø˛`„l?q∑0	`ÜHe †Ç%0	*ÜHÜ˜	1*ÜHÜ˜	0/	*ÜHÜ˜	1" …";qˇîÈ¯ıA˝OÔVvP¿πÖYπy˜´¬Îü–Ø0Å’*ÜHÜ˜	/1Å≈0Å¬0Åø0Åº ΩOπ≤êLÅ6gànÔA·m˛Ÿ"ùø[íJ–¢ƒ`F"z0Åó0§}0{10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Issuing CAa€F(2äåçJ∑ø˛`„l?q∑0	*ÜHÜ˜ ÇÄY|.„Ã4≠W≤∞∫;∏)ÖÅÃû◊∑T0qùûÄ0û‚T‚>ÿ§¢ˇ WI\‡ËÔû6Ü¸îˇ
+™eqHo∑¬u\≈ïóöñL›Ì©ó√ﬂDdûÃéî˘˙≤ T†Çªø˝ƒÛYÏñ1ˇIäû‚Wg˝XÛyÎ§•ﬁøn¡U œ<ôôÒÌ≥{Ä;úiÏÆFüˆ:¢¯Ëü&wlôé~uë%
+4}üÏ¶Üÿÿƒ‹U•®õ®;áË“Hﬁ›VBqA~Ÿ"]{ JœÒo
+[~z&∂y¶kª∫1Ë∂I.J–Ca?2ü€∏∞›ÛRu1qxû˙€´n‘Elzì∆¿Øø≠‘ÏZ«ÏÅ~√èûåÑcã≈M´â√kh˛&|sí√ß‰Uƒ⁄;û[~r‘ŒË∏ãzbOwægQ¨ê∆ˇˆÛ—°]ˆ™∑k⁄ìı3kùä·#Ìo?ÖÎ˙c⁄ÍRÚf?≈M%Åh7‡erVals°hocspValsÅY◊0Ç”
+ †ÇÃ0Ç»	+0Çπ0Çµ0ÅÈ¢cÛ¢^ÕÕ≈Rπ?Û”5fm»~20261009220926Z0Åò0Åï0I0	+ ﬂÇ7S^Sÿ3±‡=$5ÒuÊ·
+9=G‹óèØà{MsÕÂÓ§•*•¸ÈpåÚÄ1ÓDdsÄ 20261009220926Z†20261016220925Z°"0 0	+020161011220926Z°#0!0	+0¬◊g#Œ`ı›Q˙CŒT8Cæ0	*ÜHÜ˜ ÇÅ &º∑âvëN/I=≥ı¸`iÑ¥UZ„‰¿:±√jd+=> ÊÈ.ExìÇëÔ•Í…Ì¥çæÕAk—≠≠(m¥EÛÎgô$ﬁNu≤øê°y∞3<
+‚cnïcóD'ìNÁ¨üË^±f&
+€°ä˚`ÊÌM›»üÄk8ûäÔIÿáÈ@£‰Õ∂5'Ûéz≠˜…»»ú»†lGæıÂ†>Ü=5SÏÕå^’ÌL?€M·eıëÖô(∂+®•˚]#∆·;ﬁ!hPö4:◊¿ßçHã[˜àât@[ﬂÌÂ7“◊RQßØóˆ¨l÷^ﬁ(§“äbΩˇ¶ ≈MËa*_0Öj:@L4[ÿµ´IÒÈ∏ÆïÄ– $æìQ>à©˜¯Ì
+ÅC”f≥çªé‡Í´]Gﬁ)ÚIÅ%∏Gx(∑§v1é1a#S"Âoa·ÈÁA-”Ú0=ˆƒù›æRπœZ±†\âÊWK`Á Pç:‡ÁÏ.ºÑ≥¢:Ï…~—Æ'¸e–âE$Ó<GÏL†Ç10Ç-0Ç)0Ç†/	õËƒH®EM—g+a0	*ÜHÜ˜ 0J1!0USSL.com C2PA ICA R1 202510U
+SSL Corporation10	UUS0260102212505Z270102212504Z0M10	UUS10U
+SSL Corp1+0)U"SSL.com C2PA ICA R1 OCSP Responder0Ç¢0	*ÜHÜ˜ Çè 0ÇäÇÅ ≈Á¯ô…˘Â-œhwÈiëP‹©ë\O¿´—ô)„ñŸ˘Y˜fÄäñû*´¶Ü˘dkV∏NêƒÍ,D[ïp\âKºúÁïA¯V ” &Tn=∆≥ü∂tZ¯€kûPhêù‹Zêò©ãCﬁÇùûœz`ÎãØõè)∏Ü	G≠U[^
+èÍÃäım$8Ëz˚¡¬–Ì+ıÁëpÁzπ‘Üüó4hs‡ü2`Ø∆™tFµ0fÚÎz™ÄDxCü ´bÒ“∑L1R¶$D˝#÷2“y¡⁄¨,fÏËàíCÑ/m,ïìÅ<Òâ¨'ã‘I”kb∆h*(¶»s•lÇÈl‘∞
+ Ûß%lY¬∏≤ürn4‚£x;3 q% ≠•π…[∑CN¢”[Ç¸d^t;{ƒ:ÔS´ñ˚ÌÉqúv<ü¬nmÏYdÔ9´˙åü@ˇπ<±ÃOﬂM%4ØÃ]πBÖk6[ö·0s◊Ú˜?‡ùÃá—πíœÉ‘ƒ\f˚≠Ò £Åá0ÅÑ0Uˇ0 0U#0Ä9=G‹óèØà{MsÕÂÓ§•*0	+0 0U%0
++	0UcÛ¢^ÕÕ≈Rπ?Û”5fm»~0UˇÄ0	*ÜHÜ˜ Ç wÏ∫'8¯Ãıl>(‘≥
+œwıÜh|uÉÂIƒh˙√fΩ“pw¸L&à˜0KTdŒë| Ø∑Zµ‰™ôüá6È`ú∞"éΩÊˇ¡5ÿd_¨—>·@â®ÃâÁ†2fµ.øÒ9M˝lsæˆ 6p„’_yŸ÷r¡2LÙÖ©B∏FÇÄ3≈h,ªÂ¸2ûâ_ü–˛üãk\^tüPÒ)úP ƒV¯¯	•xw≥‰ëäÂ *∂·≤≈±!Ω¢ÖÜ8£¨∏:9 ^÷1∂˛∫:™†∫SNÚÛ*OÿdÖÇyZ‹Oã‘S¬=z¿∂¶ΩÑ*Î4Ïí2˚ µi„_:±ìQ…XRòï–6Øö›djÜ^cY¥ÇNßä¸≠˜C9CqQI€««Bë `EØC[i¸J<1ˆ|;Äù¿[^® %ıÌE¸F˛{πˆM,A$§`Ø£ÛÎ„∏ıqÉ»IΩê?Ëÿëé4X6Üﬂ’Œ∂%≈ìY˜s¡3˚0oåπÈ=“{h>6ˆ˘Ïx*˚±˙Bt1ÓöÿHn±¯û–+…ƒè˚<zœ«‰“ßj√3”÷¡ µË"ìLÆ_4éÔi{€|Ãeı1¥UâUÇN»n…√€Oëª^◊EST}hL˜\⁄)›µv,6zãGåÌc‡£´4Ÿ≈∞Eπ∫úÊ•r›∂∏!ﬁê«gcpadY&v                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ˆY ;›òöò—Ÿºy‰∑˝Û8ê-˜Éu1;o„K8åWÀn8á”sla\î{πè∆K:_é/«˘HèêjªºﬁÇÎÈ∑◊¬ÛGÜNXÍ°≈/_—D∞ÇEØ®—Ëo·s<n }Låbô0±UìﬂÁﬁzÂÉU4ÖòGGÎ%∑»ë”S^™=⁄∂}ò:—'íãfLùNø@b»Í˙å∞∏¯ùn¨HÏ =¿ ÀCFZ5\18¸-R‹È/¡ﬂ¡üÃ~°ô
+úéX-GM úfJ?`·sFËÃ±H‘ƒ∞ü[t„€2ÇvYπΩŒéÂÙé~òsi0aó^˙F/`ÉzSÜæË/´+
+endstream
+endobj
+14 0 obj
+<< /AFRelationship /C2PA_Manifest /Desc (Content Credentials) /F (Content Credentials) /EF << /F 13 0 R >> /Subtype (application/c2pa) /Type /Filespec /UF (Content Credentials) >>
+endobj
+xref
+3 1
+0000020894 00001 n 
+13 2
+0000021029 00000 n 
+0000045408 00000 n 
+trailer
+<< /Size 15 /Root 3 1 R /Prev 20555 >>
+startxref
+45604
+%%EOF
