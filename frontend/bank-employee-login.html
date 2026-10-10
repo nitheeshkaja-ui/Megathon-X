@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFT | Bank Employee Login</title>
+    <link rel="stylesheet" href="bank-employee-login.css">
+</head>
+<body>
+
+    <main class="login-container">
+
+        <!-- LEFT: GIFT BRAND AND EMPLOYEE IMAGE -->
+        <section class="image-panel">
+
+            <a class="brand" href="index.html" aria-label="GIFT home">
+                <svg class="leaf-logo" viewBox="0 0 48 48"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M42 4C22 5 8 13 8 28c0 8 5 13 13 12C36 38 42 21 42 4Z"
+                          fill="#65d98b"/>
+                    <path d="M7 42C16 29 25 19 36 12"
+                          fill="none" stroke="#eaffef"
+                          stroke-width="3" stroke-linecap="round"/>
+                    <path d="M8 19C3 25 4 32 10 36"
+                          fill="none" stroke="#32b968"
+                          stroke-width="4" stroke-linecap="round"/>
+                </svg>
+                <span>GIFT</span>
+            </a>
+
+            <div class="image-overlay"></div>
+            <div class="floating-circle circle-one"></div>
+            <div class="floating-circle circle-two"></div>
+            <div class="floating-circle circle-three"></div>
+
+        </section>
+
+        <!-- RIGHT: SIMPLE LOGIN FORM -->
+        <section class="form-panel">
+
+            <div class="login-form-wrapper">
+
+                <a href="index.html" class="back-to-role">
+                    <span aria-hidden="true">←</span>
+                    Back to Role Selection
+                </a>
+
+                <header class="form-heading">
+                    <h1>Welcome <span>Back</span></h1>
+                    <p>Bank Employee Login</p>
+                </header>
+
+                <form id="loginForm" autocomplete="off">
+
+                    <div class="input-group">
+                        <label for="identifier">Employee ID or Email</label>
+
+                        <div class="input-box">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4"></circle>
+                                <path d="M4 21v-2a8 8 0 0 1 16 0v2z"></path>
+                            </svg>
+
+                            <input
+                                type="text"
+                                id="identifier"
+                                name="gift_employee_identifier"
+                                placeholder="Enter employee ID or email"
+                                autocomplete="off"
+                                autocapitalize="none"
+                                spellcheck="false"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+
+                        <div class="input-box">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="4" y="10" width="16"
+                                      height="11" rx="2"></rect>
+                                <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+                                <path d="M12 14v3"></path>
+                            </svg>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="gift_employee_password"
+                                placeholder="Enter your password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="show-password"
+                                aria-label="Show password"
+                            >Show</button>
+                        </div>
+                    </div>
+
+                    <p id="loginMessage"
+                       class="login-message"
+                       role="status"
+                       aria-live="polite"></p>
+
+                    <button type="submit" id="loginButton"
+                            class="login-button">
+                        <span id="buttonText">Sign In</span>
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </button>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="bank-employee-login.js"></script>
+</body>
+</html>

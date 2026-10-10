@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="autocomplete" content="off">
+  <title>Green Insights | Customer Dashboard</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7f5;
+      color: #20352a;
+    }
+
+    .layout {
+      min-height: 100vh;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 245px;
+      flex-shrink: 0;
+      background: #143d29;
+      color: white;
+      padding: 28px 18px;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 8px 10px 35px;
+    }
+
+    .brand span {
+      color: #91e4a6;
+    }
+
+    .nav-label {
+      padding: 12px 10px;
+      font-size: 11px;
+      color: #b7c9bd;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 14px 12px;
+      color: #e3eee6;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+      background: #286441;
+      color: white;
+    }
+
+    .sidebar-bottom {
+      margin-top: 50px;
+      padding: 12px;
+      border-top: 1px solid #38634a;
+      color: #d9e8dd;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .main {
+      min-width: 0;
+      flex: 1;
+      padding: 30px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 30px;
+    }
+
+    .topbar h1 {
+      font-size: 26px;
+      margin-bottom: 7px;
+    }
+
+    .muted {
+      color: #78877d;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #d9f0df;
+      color: #1d6838;
+      font-weight: bold;
+    }
+
+    .profile-name {
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .logout {
+      padding: 10px 13px;
+      border: 1px solid #d7e2d9;
+      background: white;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #31523d;
+    }
+
+    .welcome {
+      padding: 27px;
+      border-radius: 15px;
+      background: linear-gradient(115deg, #17643a, #32975a);
+      color: white;
+      margin-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .welcome h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .welcome p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #e4f5e8;
+      max-width: 560px;
+    }
+
+    .welcome-icon {
+      font-size: 55px;
+    }
+
+    .section-title {
+      font-size: 17px;
+      margin: 25px 0 15px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e5ece7;
+      border-radius: 12px;
+      padding: 20px;
+      min-width: 0;
+      box-shadow: 0 3px 12px rgba(26, 60, 39, 0.035);
+    }
+
+    .card-label {
+      font-size: 12px;
+      color: #748279;
+      line-height: 1.5;
+    }
+
+    .card-value {
+      font-size: 25px;
+      font-weight: bold;
+      margin: 13px 0 8px;
+      overflow-wrap: anywhere;
+    }
+
+    .card-note {
+      font-size: 12px;
+      color: #33824b;
+      line-height: 1.5;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .panel {
+      background: white;
+      border: 1px solid #e5ece7;
+      border-radius: 12px;
+      padding: 22px;
+      min-width: 0;
+    }
+
+    .panel h3 {
+      font-size: 16px;
+      margin-bottom: 7px;
+    }
+
+    .panel-subtitle {
+      font-size: 12px;
+      color: #7a887f;
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    .product {
+      display: flex;
+      gap: 13px;
+      align-items: flex-start;
+      padding: 15px 0;
+      border-bottom: 1px solid #edf1ee;
+    }
+
+    .product:last-child {
+      border-bottom: none;
+    }
+
+    .product-icon {
+      width: 43px;
+      height: 43px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: #e9f6ec;
+      font-size: 21px;
+    }
+
+    .product h4 {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .product p {
+      color: #78877d;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .product-tag {
+      display: inline-block;
+      margin-top: 7px;
+      font-size: 11px;
+      color: #287640;
+      background: #edf8ef;
+      padding: 5px 8px;
+      border-radius: 20px;
+    }
+
+    .activity-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 0;
+      border-bottom: 1px solid #edf1ee;
+      font-size: 13px;
+    }
+
+    .activity-row:last-child {
+      border-bottom: none;
+    }
+
+    .activity-row strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 13px;
+    }
+
+    .status {
+      color: #31824b;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .impact-banner {
+      margin-top: 20px;
+      padding: 19px;
+      border: 1px solid #d9ecdd;
+      background: #eef8f0;
+      border-radius: 12px;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #315b3c;
+    }
+
+    .notice {
+      font-size: 11px;
+      line-height: 1.6;
+      color: #78877d;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 1100px) {
+      .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .layout {
+        display: block;
+      }
+
+      .sidebar {
+        width: 100%;
+        padding: 15px;
+      }
+
+      .brand {
+        padding: 8px 5px 15px;
+      }
+
+      .nav-label,
+      .sidebar-bottom {
+        display: none;
+      }
+
+      .nav-link {
+        display: inline-block;
+        padding: 10px;
+        margin: 2px;
+      }
+
+      .main {
+        padding: 18px 13px;
+      }
+
+      .topbar {
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .topbar h1 {
+        font-size: 22px;
+      }
+
+      .welcome {
+        padding: 20px;
+      }
+
+      .welcome h2 {
+        font-size: 20px;
+      }
+
+      .welcome-icon {
+        display: none;
+      }
+
+      .cards {
+        gap: 10px;
+      }
+
+      .card {
+        padding: 14px;
+      }
+
+      .card-value {
+        font-size: 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">🌿 Green <span>Insights</span></div>
+
+      <div class="nav-label">Customer workspace</div>
+      <a class="nav-link active" href="#overview">▦ &nbsp; Overview</a>
+      <a class="nav-link" href="#accounts">▣ &nbsp; My accounts</a>
+      <a class="nav-link" href="#recommendations">♧ &nbsp; Green products</a>
+      <a class="nav-link" href="#impact">🌍 &nbsp; Green impact</a>
+      <a class="nav-link" href="#activity">↔ &nbsp; Recent activity</a>
+
+      <div class="sidebar-bottom">
+        Sustainable banking<br>
+        <span class="muted" style="color:#c6d9cb">
+          Small choices. Greener future.
+        </span>
+      </div>
+    </aside>
+
+    <main class="main" id="overview">
+      <header class="topbar">
+        <div>
+          <h1>Customer Dashboard</h1>
+          <p class="muted" id="today"></p>
+        </div>
+
+        <div class="profile">
+          <div class="avatar" id="avatar">C</div>
+          <div>
+            <div class="profile-name" id="customerName">Customer</div>
+            <div class="muted">Customer account</div>
+          </div>
+          <button class="logout" id="logoutButton">Logout</button>
+        </div>
+      </header>
+
+      <section class="welcome">
+        <div>
+          <h2 id="welcomeTitle">Welcome to Green Insights</h2>
+          <p>
+            Explore sustainable financial choices, discover green
+            products, and understand how everyday decisions can
+            support a lower-carbon future.
+          </p>
+        </div>
+        <div class="welcome-icon">🌳</div>
+      </section>
+
+      <h2 class="section-title" id="accounts">Account overview</h2>
+
+      <section class="cards">
+        <div class="card">
+          <div class="card-label">Linked accounts</div>
+          <div class="card-value" id="accountCount">—</div>
+          <div class="card-note">From your account records</div>
+        </div>
+
+        <div class="card">
+          <div class="card-label">Recent transactions</div>
+          <div class="card-value" id="transactionCount">—</div>
+          <div class="card-note">Recorded activity</div>
+        </div>
+
+        <div class="card">
+          <div class="card-label">Green products</div>
+          <div class="card-value" id="productCount">4</div>
+          <div class="card-note">Available to explore</div>
+        </div>
+
+        <div class="card">
+          <div class="card-label">Carbon savings</div>
+          <div class="card-value">—</div>
+          <div class="card-note">No verified estimate yet</div>
+        </div>
+      </section>
+
+      <div class="content-grid">
+        <section class="panel" id="recommendations">
+          <h3>Green-finance opportunities</h3>
+          <p class="panel-subtitle">
+            Explore options that may suit your sustainability goals.
+            Eligibility and terms depend on the provider.
+          </p>
+
+          <div class="product">
+            <div class="product-icon">🚗</div>
+            <div>
+              <h4>Electric Vehicle Finance</h4>
+              <p>Explore financing options for an electric vehicle.</p>
+              <span class="product-tag">Cleaner mobility</span>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-icon">🏡</div>
+            <div>
+              <h4>Green Home Loan</h4>
+              <p>Explore eligible home improvements and energy efficiency.</p>
+              <span class="product-tag">Efficient homes</span>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-icon">☀️</div>
+            <div>
+              <h4>Solar Finance</h4>
+              <p>Learn about financing for home solar installations.</p>
+              <span class="product-tag">Renewable energy</span>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-icon">📄</div>
+            <div>
+              <h4>Paperless Banking</h4>
+              <p>Consider digital statements to reduce paper use.</p>
+              <span class="product-tag">Less paper</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="activity">
+          <h3>Recent activity</h3>
+          <p class="panel-subtitle">
+            Latest activity available from your customer records.
+          </p>
+
+          <div id="activityList">
+            <p class="muted">
+              Loading transaction activity...
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <section class="impact-banner" id="impact">
+        <strong>🌱 Your sustainability journey</strong><br>
+        Your dashboard will show measured environmental impact when
+        verified transaction and carbon-factor data are available.
+        We do not estimate carbon savings without supporting data.
+      </section>
+
+      <p class="notice">
+        Demonstration interface. Product descriptions are illustrative.
+        This dashboard does not display real banking balances or verified
+        environmental savings. Account and activity metrics depend on
+        the connected demo database.
+      </p>
+    </main>
+  </div>
+
+  <script>
+    const user = JSON.parse(localStorage.getItem("gciUser") || "null");
+
+    if (!user) {
+      window.location.replace("customer-dashboard.html");
+    } else {
+      const name = user.full_name || user.name || "Customer";
+
+      document.getElementById("customerName").textContent = name;
+      document.getElementById("welcomeTitle").textContent =
+        "Welcome, " + name.split(" ")[0] + "!";
+
+      document.getElementById("avatar").textContent =
+        name.trim().charAt(0).toUpperCase();
+
+      document.getElementById("today").textContent =
+        new Date().toLocaleDateString(undefined, {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric"
+        });
+
+      loadCustomerData();
+    }
+
+    document.getElementById("logoutButton").addEventListener("click", () => {
+      localStorage.removeItem("gciUser");
+      window.location.replace("customer-dashboard.html");
+    });
+
+    async function loadCustomerData() {
+      /*
+        The existing dashboard summary endpoint returns platform-wide
+        counts, not necessarily this individual customer's information.
+        Do not use those totals as personal account balances.
+      */
+      try {
+        const response = await fetch(
+          "http://127.0.0.1:5000/api/health"
+        );
+
+        if (!response.ok) {
+          throw new Error("Backend unavailable");
+        }
+
+        const data = await response.json();
+
+        if (data.backend === "running" && data.database === "connected") {
+          document.getElementById("activityList").innerHTML =
+            '<p class="muted">Database connected. Customer-specific ' +
+            'transactions will appear here after the personal activity ' +
+            'API is connected.</p>';
+        } else {
+          throw new Error("Database not connected");
+        }
+      } catch (error) {
+        document.getElementById("activityList").textContent =
+          "Unable to load live activity. Check that the backend is running.";
+      }
+    }
+  </script>
+</body>
+</html>
