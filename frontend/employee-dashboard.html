@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0e3b2e">
+  <title>GIFT | Employee Dashboard</title>
+  <link rel="stylesheet" href="css/employee-dashboard.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard" aria-label="GIFT home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span><strong>GIFT</strong><small>Green Customer<br>Insights Platform</small></span>
+      </a>
+
+      <nav class="navigation" aria-label="Main navigation">
+        <a class="nav-link active" href="#dashboard"><span class="nav-icon">▦</span> Dashboard</a>
+        <a class="nav-link" href="#recommendations"><span class="nav-icon">♧</span> Recommendations</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="leaf-decoration" aria-hidden="true">❧</div>
+        <div class="lloyds-mark" aria-hidden="true">♞</div>
+        <strong class="lloyds-name">LLOYDS</strong>
+        <small>Banking for a Greener<br>Tomorrow</small>
+      </div>
+    </aside>
+
+    <main class="main-area" id="dashboard">
+      <header class="topbar">
+        <div class="welcome">
+          <span>Welcome back,</span>
+          <h1 id="welcomeName">Bank Officer <span class="sun" aria-hidden="true">☀</span></h1>
+          <p id="welcomeSubtitle">Here's your green banking overview.</p>
+        </div>
+        <div class="topbar-actions">
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="recommendationSearch" type="search" placeholder="Search customers by name or account..." aria-label="Search customers by name or account">
+          </label>
+          <button class="notification-button" type="button" aria-label="Notifications">♧<i></i></button>
+          <button class="profile-button" type="button" aria-label="Bank officer profile">
+            <span class="profile-avatar">B</span>
+            <span class="profile-copy"><strong id="profileName">Bank Officer</strong><small id="profileBank">Lloyds Bank</small></span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <span class="eyebrow">GREEN CUSTOMER INSIGHTS</span>
+          <h2 id="hero-title">Turning insights<br>into a greener future.</h2>
+          <p>Understand your customers, identify green opportunities, and drive meaningful environmental impact.</p>
+          <a class="hero-button" href="#recommendations">Explore Insights <span aria-hidden="true">→</span></a>
+          <div class="hero-highlights" aria-label="Platform focus areas">
+            <div><span class="highlight-icon">♧</span><span>Sustainable<br>Growth</span></div>
+            <div><span class="highlight-icon">♙</span><span>Customer<br>Focus</span></div>
+            <div><span class="highlight-icon">▥</span><span>Positive<br>Impact</span></div>
+          </div>
+        </div>
+
+        <div class="insight-preview" aria-label="Employee dashboard metrics">
+          <div class="preview-heading"><span>Financial Overview</span><span class="live-dot"><i></i><span id="dataStatus">Connecting</span></span></div>
+          <div class="preview-metrics">
+            <article class="preview-metric"><span>Total Customers</span><strong id="totalCustomers">—</strong><small>Bank-wide customers</small></article>
+            <article class="preview-metric"><span>Recommendations</span><strong id="totalRecommendations">—</strong><small>Generated insights</small></article>
+            <article class="preview-metric"><span>Green Products</span><strong id="totalGreenProducts">—</strong><small>Recommended products</small></article>
+          </div>
+          <div class="preview-charts">
+            <article class="chart-card">
+              <strong>Portfolio Trend</strong>
+              <div class="chart-placeholder">
+                <span class="chart-empty-icon">↗</span>
+                <span>Connect portfolio data to display trends</span>
+              </div>
+              <div class="chart-labels"><span>Portfolio</span><span>Live data pending</span></div>
+            </article>
+            <article class="chart-card distribution">
+              <strong>Recommendation Status</strong>
+              <div class="status-summary">
+                <div class="status-ring"><span id="recommendationCountRing">—</span></div>
+                <div class="status-legend"><span><i></i>Recommendations</span><small>Loaded from MySQL</small></div>
+              </div>
+            </article>
+          </div>
+          <p class="preview-note">Metrics are loaded from your Flask API</p>
+        </div>
+      </section>
+
+      <section class="summary-strip" aria-label="Key focus areas">
+        <article class="summary-item"><span class="summary-icon">♧</span><div><strong>Sustainable growth</strong><small>Spot relevant opportunities</small></div></article>
+        <article class="summary-item"><span class="summary-icon">♙</span><div><strong>Customer focus</strong><small>Understand customer needs</small></div></article>
+        <article class="summary-item"><span class="summary-icon">↗</span><div><strong>Positive impact</strong><small>Support greener choices</small></div></article>
+      </section>
+
+      <section class="recommendations-section" id="recommendations">
+        <div class="section-heading">
+          <div><span class="eyebrow dark-eyebrow">CUSTOMER OPPORTUNITIES</span><h2>Customers</h2><p class="section-subtitle">Select a customer to view their details and recommendations.</p></div>
+          <span class="results-count" id="customerCount">Loading customers...</span>
+        </div>
+        <div class="recommendation-message" id="recommendationMessage" role="status">Connecting to your Flask backend...</div>
+        <div class="customer-table-wrapper">
+          <table class="customer-table">
+            <thead><tr><th>Customer Name</th><th>Account Number</th></tr></thead>
+            <tbody id="customerTableBody"><tr><td colspan="2" class="table-message">Loading customers...</td></tr></tbody>
+          </table>
+        </div>
+        <section id="customerDetailsPanel" class="customer-details-panel" hidden aria-live="polite">
+          <div class="customer-details-header">
+            <div><span class="eyebrow dark-eyebrow">SELECTED CUSTOMER</span><h2 id="detailCustomerName">Customer Details</h2><p id="detailCustomerSubtitle">Customer profile and related recommendations</p></div>
+            <button type="button" class="close-details-button" id="closeCustomerDetails">Close details ✕</button>
+          </div>
+          <div id="customerDetailsContent" class="customer-details-grid"></div>
+          <div class="customer-recommendations-block"><h3>Green Recommendations</h3><div id="selectedCustomerRecommendations"></div></div>
+        </section>
+      </section>
+      <footer class="page-footer"><span>GIFT · Green Customer Insights Platform</span><span>Banking for a Greener Tomorrow</span></footer>
+    </main>
+  </div>
+
+  <script>
+    /*
+      GIFT employee dashboard API integration.
+      Expected Flask routes:
+        GET /api/employee/dashboard/<user_id>
+        GET /api/employee/recommendations/<user_id>
+
+      Your login page should store the employee object returned by
+      POST /api/employee/login in sessionStorage under "employee"
+      or "giftEmployee". This script also checks localStorage.
+    */
+    const API_BASE = "http://127.0.0.1:5000/api";
+
+    const numberFormat = (value) => {
+      const parsed = Number(value);
+      return Number.isFinite(parsed) ? parsed.toLocaleString("en-IN") : "0";
+    };
+
+    function readSavedEmployee() {
+      const keys = ["employee", "giftEmployee", "user", "giftUser"];
+      for (const storage of [sessionStorage, localStorage]) {
+        for (const key of keys) {
+          const raw = storage.getItem(key);
+          if (!raw) continue;
+          try {
+            const parsed = JSON.parse(raw);
+            const employee = parsed.employee || parsed.user || parsed;
+            if (employee && employee.user_id && (employee.role_id === 3 || employee.role_name || employee.role === "Employee" || employee.role === "Bank Officer" || key.toLowerCase().includes("employee"))) {
+              return employee;
+            }
+            if (employee && employee.user_id) return employee;
+          } catch (error) {
+            // Ignore non-JSON session values and continue checking.
+          }
+        }
+      }
+      return null;
+    }
+
+    function setDataStatus(message, state) {
+      const status = document.getElementById("dataStatus");
+      status.textContent = message;
+      status.dataset.state = state || "default";
+    }
+
+    function showRecommendationsMessage(message, isError = false) {
+      const box = document.getElementById("recommendationMessage");
+      box.textContent = message;
+      box.classList.toggle("is-error", isError);
+      box.hidden = false;
+    }
+
+    function safeText(value, fallback = "—") {
+      if (value === null || value === undefined || value === "") return fallback;
+      return String(value);
+    }
+
+    function firstAvailable(record, keys, fallback = "") {
+      for (const key of keys) {
+        if (record && record[key] !== null && record[key] !== undefined && String(record[key]).trim() !== "") return record[key];
+      }
+      return fallback;
+    }
+
+    function getCustomerKey(item) {
+      return String(firstAvailable(item, ["customer_id", "customerId", "customer_ref", "customer_ref_id", "account_number", "account_no", "customer_name"], "unknown-customer"));
+    }
+
+    function getAccountNumber(item) {
+      return firstAvailable(item, ["account_number", "account_no", "accountNumber", "account_num", "customer_account_number"], "Not provided by API");
+    }
+
+    let allRecommendations = [];
+    let allCustomers = [];
+
+    function buildCustomers(items) {
+      const map = new Map();
+      items.forEach((item) => {
+        const key = getCustomerKey(item);
+        if (!map.has(key)) {
+          map.set(key, {
+            key,
+            name: firstAvailable(item, ["customer_name", "full_name", "name"], "Customer"),
+            accountNumber: getAccountNumber(item),
+            records: [],
+            source: item
+          });
+        }
+        const customer = map.get(key);
+        customer.records.push(item);
+        // Enrich the record if a later recommendation has more customer fields.
+        if (customer.accountNumber === "Not provided by API") customer.accountNumber = getAccountNumber(item);
+        if (customer.name === "Customer") customer.name = firstAvailable(item, ["customer_name", "full_name", "name"], "Customer");
+      });
+      return Array.from(map.values()).sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    function renderCustomers(items) {
+      const tbody = document.getElementById("customerTableBody");
+      const search = document.getElementById("recommendationSearch").value.trim().toLowerCase();
+      tbody.replaceChildren();
+      const filtered = items.filter((customer) => `${customer.name} ${customer.accountNumber}`.toLowerCase().includes(search));
+      document.getElementById("customerCount").textContent = `${filtered.length} customer${filtered.length === 1 ? "" : "s"}`;
+
+      if (!filtered.length) {
+        const row = document.createElement("tr");
+        const cell = document.createElement("td");
+        cell.colSpan = 2;
+        cell.className = "table-message";
+        cell.textContent = items.length ? "No customers match your search." : "No customer records were returned by the recommendations API.";
+        row.append(cell);
+        tbody.append(row);
+        return;
+      }
+
+      filtered.forEach((customer) => {
+        const row = document.createElement("tr");
+        row.className = "customer-row";
+        row.tabIndex = 0;
+        row.setAttribute("role", "button");
+        row.setAttribute("aria-label", `View details for ${customer.name}`);
+        const nameCell = document.createElement("td");
+        const nameWrap = document.createElement("span");
+        nameWrap.className = "customer-name-cell";
+        nameWrap.textContent = customer.name;
+        nameCell.append(nameWrap);
+        const accountCell = document.createElement("td");
+        accountCell.className = "account-number-cell";
+        accountCell.textContent = maskAccountNumber(customer.accountNumber);
+        const arrow = document.createElement("span");
+        arrow.className = "row-arrow";
+        arrow.textContent = "View details →";
+        accountCell.append(document.createTextNode("  "), arrow);
+        row.append(nameCell, accountCell);
+        row.addEventListener("click", () => showCustomerDetails(customer));
+        row.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            showCustomerDetails(customer);
+          }
+        });
+        tbody.append(row);
+      });
+    }
+
+    function maskAccountNumber(value) {
+      const raw = String(value || "");
+      if (!raw || raw === "Not provided by API") return "Not available";
+      const digits = raw.replace(/\s/g, "");
+      if (digits.length <= 4) return `•••• ${digits}`;
+      return `•••• ${digits.slice(-4)}`;
+    }
+
+    function addDetail(content, label, value) {
+      const item = document.createElement("div");
+      item.className = "customer-detail-item";
+      const labelElement = document.createElement("span");
+      labelElement.textContent = label;
+      const valueElement = document.createElement("strong");
+      valueElement.textContent = safeText(value, "Not available");
+      item.append(labelElement, valueElement);
+      content.append(item);
+    }
+
+  
+  function formatPercentScore(value, scale) {
+    if (value === null || value === undefined || value === "") return "Unavailable";
+    const number = Number(value);
+    if (!Number.isFinite(number)) return "Unavailable";
+    const normalized = scale === "0-100" ? number : (number <= 1 ? number * 100 : number);
+    return `${Math.max(0, Math.min(100, normalized)).toFixed(1)} / 100`;
+  }
+
+  function formatConfidence(value) {
+    if (value === null || value === undefined || value === "") return "Unavailable (not supplied by the model)";
+    const number = Number(value);
+    if (!Number.isFinite(number)) return safeText(value, "Unavailable");
+    return `${(number <= 1 ? number * 100 : number).toFixed(1)}%`;
+  }
+
+  function formatReasonCodes(value) {
+    if (value === null || value === undefined || value === "") return "No supported reason codes returned";
+    let reasons = value;
+    if (typeof reasons === "string") {
+      try { reasons = JSON.parse(reasons); } catch { return reasons; }
+    }
+    if (Array.isArray(reasons)) return reasons.length ? reasons.join(", ") : "No supported reason codes returned";
+    if (typeof reasons === "object") return Object.entries(reasons).map(([key, val]) => `${key}: ${val}`).join("; ");
+    return String(reasons);
+  }
+
+  function showCustomerDetails(customer) {
+      const panel = document.getElementById("customerDetailsPanel");
+      const content = document.getElementById("customerDetailsContent");
+      const recommendations = document.getElementById("selectedCustomerRecommendations");
+      const record = customer.source || {};
+      content.replaceChildren();
+      recommendations.replaceChildren();
+      document.getElementById("detailCustomerName").textContent = customer.name;
+      document.getElementById("detailCustomerSubtitle").textContent = `${customer.records.length} related recommendation${customer.records.length === 1 ? "" : "s"}`;
+
+      addDetail(content, "Account number", customer.accountNumber);
+      addDetail(content, "Email", firstAvailable(record, ["email", "customer_email", "email_address"]));
+      addDetail(content, "Phone", firstAvailable(record, ["phone", "phone_number", "mobile", "mobile_number", "customer_phone"]));
+      addDetail(content, "Customer ID", firstAvailable(record, ["customer_id", "customerId", "customer_ref", "customer_ref_id"]));
+      addDetail(content, "City", firstAvailable(record, ["city", "customer_city"]));
+      addDetail(content, "Customer segment", firstAvailable(record, ["segment", "customer_segment", "customer_type"]));
+
+      if (!customer.records.length) {
+        recommendations.textContent = "No recommendations are available for this customer.";
+      } else {
+        customer.records.forEach((item) => {
+          const card = document.createElement("article");
+          card.className = "selected-recommendation-card";
+          const title = document.createElement("strong");
+          title.textContent = safeText(item.product_name, "Green product opportunity");
+          const predictionBox = document.createElement("div");
+          predictionBox.className = "ai-prediction-box";
+          const predictionHeading = document.createElement("strong");
+          predictionHeading.className = "ai-prediction-heading";
+          predictionHeading.textContent = "AI Prediction";
+          const predictionText = document.createElement("p");
+          predictionText.className = "ai-prediction-text";
+          const prediction = item.ai_prediction && typeof item.ai_prediction === "object"
+            ? item.ai_prediction
+            : null;
+          predictionText.textContent = prediction?.prediction
+            || (prediction?.available === false ? "Prediction unavailable" : "No prediction label returned");
+          predictionBox.append(predictionHeading, predictionText);
+
+          const scoreLine = document.createElement("p");
+          scoreLine.textContent = `Propensity score: ${formatPercentScore(prediction?.propensity_score, prediction?.score_scale)}`;
+          const confidenceLine = document.createElement("p");
+          confidenceLine.textContent = `Model confidence: ${formatConfidence(prediction?.confidence)}`;
+          const reasonsLine = document.createElement("p");
+          reasonsLine.textContent = `Reason codes: ${formatReasonCodes(prediction?.reason_codes)}`;
+          const explanation = document.createElement("p");
+          explanation.textContent = safeText(
+            prediction?.explanation || item.ai_explanation,
+            "No explanation is available for this recommendation."
+          );
+          const sourceLine = document.createElement("p");
+          sourceLine.textContent = `Prediction source: ${safeText(prediction?.source, "not available")}`;
+          const meta = document.createElement("div");
+          meta.className = "recommendation-details";
+          const status = document.createElement("span");
+          status.textContent = `Status: ${safeText(item.recommendation_status, "Pending")}`;
+          meta.append(status);
+          card.append(title, predictionBox, scoreLine, confidenceLine, reasonsLine, explanation, sourceLine, meta);
+          recommendations.append(card);
+        });
+      }
+
+      panel.hidden = false;
+      panel.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    document.getElementById("closeCustomerDetails").addEventListener("click", () => {
+      document.getElementById("customerDetailsPanel").hidden = true;
+    });
+
+    async function fetchJson(url) {
+      const response = await fetch(url, { headers: { "Accept": "application/json" } });
+      let body;
+      try {
+        body = await response.json();
+      } catch (error) {
+        throw new Error(`The server returned an invalid response (${response.status}).`);
+      }
+      if (!response.ok) {
+        throw new Error(body.message || `Request failed (${response.status}).`);
+      }
+      return body;
+    }
+
+    async function loadEmployeeDashboard() {
+      const employee = readSavedEmployee();
+
+      if (!employee) {
+        setDataStatus("Login required", "error");
+        document.getElementById("totalCustomers").textContent = "—";
+        document.getElementById("totalRecommendations").textContent = "—";
+        document.getElementById("totalGreenProducts").textContent = "—";
+        showRecommendationsMessage(
+          "Please sign in through the employee login page first. The login page must save the employee object returned by the Flask login API."
+        );
+        document.getElementById("customerCount").textContent = "Not connected";
+        return;
+      }
+
+      const userId = Number(employee.user_id);
+      if (!Number.isInteger(userId) || userId <= 0) {
+        setDataStatus("Invalid session", "error");
+        showRecommendationsMessage("The saved employee session does not contain a valid user ID.", true);
+        return;
+      }
+
+      const displayName = employee.full_name || employee.username || "Bank Officer";
+      document.getElementById("welcomeName").replaceChildren(document.createTextNode(displayName + " "));
+      const sun = document.createElement("span");
+      sun.className = "sun";
+      sun.setAttribute("aria-hidden", "true");
+      sun.textContent = "☀";
+      document.getElementById("welcomeName").append(sun);
+      document.getElementById("profileName").textContent = displayName;
+      document.getElementById("profileBank").textContent = employee.bank_name || "Lloyds Bank";
+
+      setDataStatus("Loading...", "default");
+      showRecommendationsMessage("Loading bank recommendations...");
+
+      try {
+        const [dashboardResult, recommendationResult] = await Promise.all([
+          fetchJson(`${API_BASE}/employee/dashboard/${encodeURIComponent(userId)}`),
+          fetchJson(`${API_BASE}/employee/recommendations/${encodeURIComponent(userId)}`)
+        ]);
+
+        if (dashboardResult.success === false) {
+          throw new Error(dashboardResult.message || "Dashboard data could not be loaded.");
+        }
+
+        const dashboard = dashboardResult.dashboard || {};
+        document.getElementById("totalCustomers").textContent = numberFormat(dashboard.total_customers);
+        document.getElementById("totalRecommendations").textContent = numberFormat(dashboard.total_recommendations);
+        document.getElementById("totalGreenProducts").textContent = numberFormat(dashboard.total_green_products);
+        document.getElementById("recommendationCountRing").textContent = numberFormat(
+          recommendationResult.total_recommendations ?? (recommendationResult.recommendations || []).length
+        );
+
+        const recommendations = Array.isArray(recommendationResult.recommendations)
+          ? recommendationResult.recommendations
+          : [];
+        allRecommendations = recommendations;
+        allCustomers = buildCustomers(recommendations);
+        renderCustomers(allCustomers);
+        setDataStatus("Live data", "success");
+
+        if (dashboardResult.employee && dashboardResult.employee.bank_name) {
+          document.getElementById("profileBank").textContent = dashboardResult.employee.bank_name;
+        }
+      } catch (error) {
+        console.error("GIFT dashboard API error:", error);
+        setDataStatus("API error", "error");
+        showRecommendationsMessage(
+          `${error.message} Check that Flask is running on port 5000, MySQL is connected, and the employee is authorized.`,
+          true
+        );
+      }
+    }
+
+    document.getElementById("recommendationSearch").addEventListener("input", function () {
+      renderCustomers(allCustomers);
+    });
+
+    document.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        document.querySelectorAll(".nav-link").forEach((item) => item.classList.remove("active"));
+        link.classList.add("active");
+      });
+    });
+
+    loadEmployeeDashboard();
+  </script>
+</body>
+</html>

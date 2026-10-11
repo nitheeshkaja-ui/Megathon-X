@@ -1,9 +1,10 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0e3b2e">
     <title>GIFT | Customer Login</title>
     <link rel="stylesheet" href="customer-login.css">
 </head>
@@ -51,10 +52,10 @@
                     <p>Customer Login</p>
                 </header>
 
-                <form id="loginForm" autocomplete="off">
+                <form id="loginForm" autocomplete="on">
 
                     <div class="input-group">
-                        <label for="email">Email Address</label>
+                        <label for="email">Email or Phone Number</label>
 
                         <div class="input-box">
                             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -63,11 +64,11 @@
                             </svg>
 
                             <input
-                                type="email"
+                                type="text"
                                 id="email"
-                                name="gift_customer_email"
-                                placeholder="Enter your email address"
-                                autocomplete="off"
+                                name="identifier"
+                                placeholder="Enter your email or phone number"
+                                autocomplete="username"
                                 autocapitalize="none"
                                 spellcheck="false"
                                 required
@@ -88,9 +89,9 @@
                             <input
                                 type="password"
                                 id="password"
-                                name="gift_customer_password"
+                                name="password"
                                 placeholder="Enter your password"
-                                autocomplete="new-password"
+                                autocomplete="current-password"
                                 required
                             >
 
@@ -124,4 +125,3 @@
     <script src="customer-login.js"></script>
 </body>
 </html>
-```

@@ -1,124 +1,126 @@
-```javascript
+
+const API_BASE = "http://127.0.0.1:5000/api";
+
 const loginForm = document.getElementById("loginForm");
-const emailInput = document.getElementById("email");
+const identifierInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
-const togglePassword = document.getElementById("togglePassword");
 const loginButton = document.getElementById("loginButton");
 const buttonText = document.getElementById("buttonText");
 const loginMessage = document.getElementById("loginMessage");
+const togglePassword = document.getElementById("togglePassword");
 
-// Start with empty fields
-function resetLoginForm() {
-    loginForm.reset();
+function showMessage(message, type = "error") {
+    loginMessage.textContent = message;
+    loginMessage.classList.remove("is-error", "is-success");
 
-    emailInput.value = "";
-    passwordInput.value = "";
-    passwordInput.type = "password";
-
-    togglePassword.textContent = "Show";
-    togglePassword.setAttribute("aria-label", "Show password");
-
-    loginMessage.textContent = "";
-    loginButton.disabled = false;
-    buttonText.textContent = "Sign In";
+    if (message) {
+        loginMessage.classList.add(
+            type === "success" ? "is-success" : "is-error"
+        );
+    }
 }
 
-window.addEventListener("pageshow", resetLoginForm);
+// Show or hide the password.
+if (togglePassword) {
+    togglePassword.addEventListener("click", () => {
+        const shouldShow = passwordInput.type === "password";
 
-// Show / hide password
-togglePassword.addEventListener("click", () => {
-    const showPassword = passwordInput.type === "password";
+        passwordInput.type = shouldShow ? "text" : "password";
+        togglePassword.textContent = shouldShow ? "Hide" : "Show";
+        togglePassword.setAttribute(
+            "aria-label",
+            shouldShow ? "Hide password" : "Show password"
+        );
+    });
+}
 
-    passwordInput.type = showPassword ? "text" : "password";
-    togglePassword.textContent = showPassword ? "Hide" : "Show";
-
-    togglePassword.setAttribute(
-        "aria-label",
-        showPassword ? "Hide password" : "Show password"
-    );
-});
-
-// Clear errors when typing
-emailInput.addEventListener("input", () => {
-    loginMessage.textContent = "";
-});
-
-passwordInput.addEventListener("input", () => {
-    loginMessage.textContent = "";
-});
-
-// Customer login
+// Verify the entered credentials through the Flask API.
 loginForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    loginMessage.textContent = "";
-
-    const email = emailInput.value.trim();
+    const identifier = identifierInput.value.trim();
     const password = passwordInput.value;
 
-    if (!email || !password) {
-        loginMessage.textContent = "Please enter your email and password.";
+    if (!identifier || !password) {
+        showMessage("Please enter your email or phone number and password.");
         return;
     }
 
     loginButton.disabled = true;
-    buttonText.textContent = "Signing in...";
+
+    if (buttonText) {
+        buttonText.textContent = "Signing in...";
+    }
+
+    showMessage("");
 
     try {
-        // Change this endpoint if your backend uses a different route.
-        const response = await fetch(
-            "http://127.0.0.1:5000/api/auth/login",
-            {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    email: email,
-                    password: password
-                })
-            }
-        );
+        const isEmail = identifier.includes("@");
 
-        const data = await response.json().catch(() => ({}));
+        const loginData = {
+            password: password
+        };
 
-        if (!response.ok || data.success !== true) {
-            throw new Error(
-                data.message || "Invalid email or password."
+        // Send the identifier using the appropriate API field.
+        if (isEmail) {
+            loginData.email = identifier;
+        } else {
+            loginData.phone_number = identifier;
+        }
+
+        const response = await fetch(`${API_BASE}/auth/login`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(loginData)
+        });
+
+        const result = await response.json();
+
+        if (!response.ok || !result.success) {
+            showMessage(
+                result.message || "Invalid credentials. Please try again."
             );
+            return;
         }
 
-        const user = data.user || {};
+        const customer = result.user;
 
-        // Ensure a customer account is used.
-        const role = String(
-            user.role || user.role_name || user.user_type || ""
-        ).toLowerCase();
-
-        if (role && !role.includes("customer")) {
-            throw new Error("Please use a customer account to sign in.");
+        // Accept only a valid customer account returned by the backend.
+        if (
+            !customer ||
+            !customer.user_id ||
+            customer.role !== "Customer"
+        ) {
+            showMessage(
+                "The server did not return a valid customer account."
+            );
+            return;
         }
 
-        // Never save the password in localStorage.
-        const safeUser = { ...user };
-        delete safeUser.password;
-        delete safeUser.token;
+        // Store customer details for the dashboard.
+        // Never store the password.
+        sessionStorage.setItem("customer", JSON.stringify(customer));
+        sessionStorage.setItem("giftCustomer", JSON.stringify(customer));
 
-        localStorage.setItem(
-            "gciCustomerUser",
-            JSON.stringify(safeUser)
-        );
+        showMessage("Login successful. Opening your dashboard...", "success");
 
-        // Change this to your actual customer dashboard filename.
+        // Redirect only after the backend confirms successful login.
         window.location.href = "customer-dashboard.html";
 
     } catch (error) {
-        loginMessage.textContent =
-            error.message ||
-            "Unable to connect to the server. Please try again.";
+        console.error("Customer login error:", error);
 
+        showMessage(
+            "Cannot connect to the backend. Please start Flask and try again."
+        );
+    } finally {
         loginButton.disabled = false;
-        buttonText.textContent = "Sign In";
+
+        if (buttonText) {
+            buttonText.textContent = "Sign In";
+        }
     }
 });
-```

@@ -1,0 +1,151 @@
+customer_id,category,transaction_count,total_spending,category_median,high_spending,repeated_activity,detected_pattern,green_recommendation
+1,Energy,2,1194.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+1,Groceries,2,1468.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+1,Housing,1,597.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+1,Shopping,2,1742.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+1,Transport,1,871.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+2,Energy,2,1252.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+2,Groceries,2,1526.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+2,Housing,1,626.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+2,Shopping,2,1800.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+2,Transport,1,900.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+3,Energy,2,1310.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+3,Groceries,2,1584.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+3,Housing,1,655.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+3,Shopping,2,1858.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+3,Transport,1,929.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+4,Energy,2,1368.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+4,Groceries,2,1642.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+4,Housing,1,684.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+4,Shopping,2,1916.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+4,Transport,1,958.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+5,Energy,2,1426.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+5,Groceries,2,1700.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+5,Housing,1,713.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+5,Shopping,2,1974.0,1567.0,True,True,High and repeated spending,"Consider durable, reusable, and environmentally responsible products."
+5,Transport,1,987.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+6,Energy,2,1484.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+6,Groceries,2,1758.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+6,Housing,1,742.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+6,Shopping,2,2032.0,1567.0,True,True,High and repeated spending,"Consider durable, reusable, and environmentally responsible products."
+6,Transport,1,1016.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+7,Energy,2,1542.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+7,Groceries,2,1816.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+7,Housing,1,771.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+7,Shopping,2,2090.0,1567.0,True,True,High and repeated spending,"Consider durable, reusable, and environmentally responsible products."
+7,Transport,1,1045.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+8,Energy,2,1600.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+8,Groceries,2,1874.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+8,Housing,1,800.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+8,Shopping,2,2148.0,1567.0,True,True,High and repeated spending,"Consider durable, reusable, and environmentally responsible products."
+8,Transport,1,1074.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+9,Energy,2,1658.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+9,Groceries,2,1932.0,1511.0,True,True,High and repeated spending,"Consider local products, reusable packaging, and reducing food waste."
+9,Housing,1,829.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+9,Shopping,2,726.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+9,Transport,1,1103.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+10,Energy,2,1716.0,1353.0,True,True,High and repeated spending,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+10,Groceries,2,1990.0,1511.0,True,True,High and repeated spending,"Consider local products, reusable packaging, and reducing food waste."
+10,Housing,1,858.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+10,Shopping,2,784.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+10,Transport,1,1132.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+11,Energy,2,1774.0,1353.0,True,True,High and repeated spending,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+11,Groceries,2,2048.0,1511.0,True,True,High and repeated spending,"Consider local products, reusable packaging, and reducing food waste."
+11,Housing,1,887.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+11,Shopping,2,842.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+11,Transport,1,1161.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+12,Energy,2,1832.0,1353.0,True,True,High and repeated spending,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+12,Groceries,2,2106.0,1511.0,True,True,High and repeated spending,"Consider local products, reusable packaging, and reducing food waste."
+12,Housing,1,916.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+12,Shopping,2,900.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+12,Transport,1,1190.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+13,Energy,2,1890.0,1353.0,True,True,High and repeated spending,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+13,Groceries,2,2164.0,1511.0,True,True,High and repeated spending,"Consider local products, reusable packaging, and reducing food waste."
+13,Housing,1,945.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+13,Shopping,2,958.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+13,Transport,1,1219.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+14,Energy,2,1948.0,1353.0,True,True,High and repeated spending,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+14,Groceries,2,742.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+14,Housing,1,974.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+14,Shopping,2,1016.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+14,Transport,1,1248.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+15,Energy,2,2006.0,1353.0,True,True,High and repeated spending,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+15,Groceries,2,800.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+15,Housing,1,1003.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+15,Shopping,2,1074.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+15,Transport,1,1277.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+16,Energy,2,2064.0,1353.0,True,True,High and repeated spending,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+16,Groceries,2,858.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+16,Housing,1,1032.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+16,Shopping,2,1132.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+16,Transport,1,1306.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+17,Energy,2,2122.0,1353.0,True,True,High and repeated spending,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+17,Groceries,2,916.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+17,Housing,1,1061.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+17,Shopping,2,1190.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+17,Transport,1,1335.0,1059.5,True,False,Higher-than-peer spending,"Explore public transport, cycling, or shared mobility options where practical."
+18,Energy,2,700.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+18,Groceries,2,974.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+18,Housing,1,1090.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+18,Shopping,2,1248.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+18,Transport,1,1364.0,1059.5,True,False,Higher-than-peer spending,"Explore public transport, cycling, or shared mobility options where practical."
+19,Energy,2,758.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+19,Groceries,2,1032.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+19,Housing,1,1119.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+19,Shopping,2,1306.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+19,Transport,1,1393.0,1059.5,True,False,Higher-than-peer spending,"Explore public transport, cycling, or shared mobility options where practical."
+20,Energy,2,816.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+20,Groceries,2,1090.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+20,Housing,1,1148.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+20,Shopping,2,1364.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+20,Transport,1,1422.0,1059.5,True,False,Higher-than-peer spending,"Explore public transport, cycling, or shared mobility options where practical."
+21,Energy,2,874.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+21,Groceries,2,1148.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+21,Housing,1,1177.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+21,Shopping,2,1422.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+21,Transport,1,1451.0,1059.5,True,False,Higher-than-peer spending,"Explore public transport, cycling, or shared mobility options where practical."
+22,Energy,2,932.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+22,Groceries,2,1206.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+22,Housing,1,1206.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+22,Shopping,2,1480.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+22,Transport,1,1480.0,1059.5,True,False,Higher-than-peer spending,"Explore public transport, cycling, or shared mobility options where practical."
+23,Energy,2,990.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+23,Groceries,2,1264.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+23,Housing,1,1235.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+23,Shopping,2,1538.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+23,Transport,1,29.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+24,Energy,2,1048.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+24,Groceries,2,1322.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+24,Housing,1,1264.0,1017.5,False,False,Limited spending evidence,More transaction history is needed before suggesting a specific housing-related green option.
+24,Shopping,2,1596.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+24,Transport,1,58.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+25,Energy,2,1106.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+25,Groceries,2,1380.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+25,Housing,1,1293.0,1017.5,True,False,Higher-than-peer spending,More transaction history is needed before suggesting a specific housing-related green option.
+25,Shopping,2,1654.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+25,Transport,1,87.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+26,Energy,2,1164.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+26,Groceries,2,1438.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+26,Housing,1,1322.0,1017.5,True,False,Higher-than-peer spending,More transaction history is needed before suggesting a specific housing-related green option.
+26,Shopping,2,1712.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+26,Transport,1,116.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+27,Energy,2,1222.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+27,Groceries,2,1496.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+27,Housing,1,1351.0,1017.5,True,False,Higher-than-peer spending,More transaction history is needed before suggesting a specific housing-related green option.
+27,Shopping,2,1770.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+27,Transport,1,145.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+28,Energy,2,1280.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+28,Groceries,2,1554.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+28,Housing,1,1380.0,1017.5,True,False,Higher-than-peer spending,More transaction history is needed before suggesting a specific housing-related green option.
+28,Shopping,2,1828.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+28,Transport,1,174.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+29,Energy,2,1338.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+29,Groceries,2,1612.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+29,Housing,1,1409.0,1017.5,True,False,Higher-than-peer spending,More transaction history is needed before suggesting a specific housing-related green option.
+29,Shopping,2,1886.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+29,Transport,1,203.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."
+30,Energy,2,1396.0,1353.0,False,True,Repeated spending activity,"Explore energy-efficient appliances, energy-saving practices, or renewable energy options."
+30,Groceries,2,1670.0,1511.0,False,True,Repeated spending activity,"Consider local products, reusable packaging, and reducing food waste."
+30,Housing,1,1438.0,1017.5,True,False,Higher-than-peer spending,More transaction history is needed before suggesting a specific housing-related green option.
+30,Shopping,2,1944.0,1567.0,False,True,Repeated spending activity,"Consider durable, reusable, and environmentally responsible products."
+30,Transport,1,232.0,1059.5,False,False,Limited spending evidence,"Explore public transport, cycling, or shared mobility options where practical."

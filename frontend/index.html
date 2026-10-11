@@ -1,640 +1,1279 @@
 
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>GIFT | Green Customer Insights Platform</title>
 
+
+
   <style>
+
     * {
+
       margin: 0;
+
       padding: 0;
+
       box-sizing: border-box;
+
     }
+
+
 
     :root {
+
       --dark-green: #073b26;
+
       --green: #167743;
+
       --light-green: #b7f0a8;
+
       --text: #173d29;
+
     }
+
+
 
     body {
+
       min-height: 100vh;
+
       font-family: "Segoe UI", Arial, sans-serif;
+
       color: var(--text);
+
       background: #f4fbf5;
+
       overflow-x: hidden;
+
     }
+
+
 
     /* Animated background */
+
     .background {
+
       position: fixed;
+
       inset: 0;
+
       z-index: -1;
+
       overflow: hidden;
+
       background:
+
         radial-gradient(ellipse at 10% 10%, #d5f6dc, transparent 45%),
+
         radial-gradient(ellipse at 90% 25%, #c2e8c9, transparent 42%),
+
         radial-gradient(ellipse at 50% 100%, #e1f4d9, transparent 50%),
+
         #f8fcf8;
+
     }
+
+
 
     .glow {
+
       position: absolute;
+
       width: 380px;
+
       height: 380px;
+
       border-radius: 50%;
+
       filter: blur(75px);
+
       opacity: 0.5;
+
       animation: glowMove 12s ease-in-out infinite alternate;
+
     }
+
+
 
     .glow-one {
+
       top: -120px;
+
       left: -100px;
+
       background: #87d99a;
+
     }
+
+
 
     .glow-two {
+
       right: -120px;
+
       top: 30%;
+
       background: #b8e5a5;
+
       animation-delay: -4s;
+
     }
+
+
 
     .glow-three {
+
       bottom: -200px;
+
       left: 35%;
+
       background: #9ddbb0;
+
       animation-delay: -8s;
+
     }
+
+
 
     .leaf {
+
       position: absolute;
+
       top: -50px;
+
       color: #368d4e;
+
       opacity: 0.35;
+
       font-size: 27px;
+
       animation: floatLeaf linear infinite;
+
       user-select: none;
+
     }
+
+
 
     .leaf:nth-of-type(1) {
+
       left: 8%;
+
       animation-duration: 17s;
+
     }
+
+
 
     .leaf:nth-of-type(2) {
+
       left: 22%;
+
       animation-duration: 22s;
+
       animation-delay: -7s;
+
     }
+
+
 
     .leaf:nth-of-type(3) {
+
       left: 42%;
+
       animation-duration: 19s;
+
       animation-delay: -4s;
+
     }
+
+
 
     .leaf:nth-of-type(4) {
+
       left: 63%;
+
       animation-duration: 24s;
+
       animation-delay: -12s;
+
     }
+
+
 
     .leaf:nth-of-type(5) {
+
       left: 80%;
+
       animation-duration: 18s;
+
       animation-delay: -6s;
+
     }
+
+
 
     .leaf:nth-of-type(6) {
+
       left: 94%;
+
       animation-duration: 21s;
+
       animation-delay: -10s;
+
     }
+
+
 
     @keyframes floatLeaf {
+
       0% {
+
         transform: translateY(0) rotate(0deg);
+
       }
+
       100% {
+
         transform: translateY(115vh) rotate(360deg);
+
       }
+
     }
+
+
 
     @keyframes glowMove {
+
       from {
+
         transform: translate(0, 0) scale(1);
+
       }
+
       to {
+
         transform: translate(70px, 45px) scale(1.25);
+
       }
+
     }
+
+
 
     @keyframes fadeDown {
+
       from {
+
         opacity: 0;
+
         transform: translateY(-18px);
+
       }
+
       to {
+
         opacity: 1;
+
         transform: translateY(0);
+
       }
+
     }
+
+
 
     @keyframes fadeUp {
+
       from {
+
         opacity: 0;
+
         transform: translateY(25px);
+
       }
+
       to {
+
         opacity: 1;
+
         transform: translateY(0);
+
       }
+
     }
+
+
 
     /* Main layout */
+
     .page {
+
       width: 100%;
+
       max-width: 1400px;
+
       min-height: 100vh;
+
       margin: auto;
+
       padding: 35px 6% 30px;
+
       display: flex;
+
       flex-direction: column;
+
     }
+
+
 
     /* GIFT logo and branding */
+
     .navbar {
+
       display: flex;
+
       align-items: center;
+
       justify-content: space-between;
+
       gap: 20px;
+
       animation: fadeDown 0.8s ease both;
+
     }
+
+
 
     .brand {
+
       display: flex;
+
       align-items: center;
+
       gap: 14px;
+
     }
+
+
 
     .logo {
+
       width: 60px;
+
       height: 60px;
+
       display: grid;
+
       place-items: center;
+
       border-radius: 18px;
+
       background: linear-gradient(145deg, #2c9d50, #07542e);
+
       box-shadow: 0 8px 22px #176c3930;
+
     }
+
+
 
     .logo svg {
+
       width: 39px;
+
       height: 39px;
+
     }
+
+
 
     .brand-name {
+
       color: var(--dark-green);
+
       font-size: 36px;
+
       line-height: 1;
+
       letter-spacing: 3px;
+
       font-weight: 900;
+
     }
+
+
 
     .brand-subtitle {
+
       margin-top: 8px;
+
       color: #64816c;
+
       font-size: 10px;
+
       letter-spacing: 2px;
+
       font-weight: 700;
+
     }
+
+
 
     .status {
+
       display: flex;
+
       align-items: center;
+
       gap: 9px;
+
       padding: 11px 16px;
+
       border: 1px solid #d8eadb;
+
       border-radius: 30px;
+
       background: #ffffffb8;
+
       color: #37734a;
+
       font-size: 12px;
+
       font-weight: 700;
+
       backdrop-filter: blur(10px);
+
     }
+
+
 
     .status-dot {
+
       width: 8px;
+
       height: 8px;
+
       border-radius: 50%;
+
       background: #35ad5c;
+
       box-shadow: 0 0 12px #35ad5c;
+
       animation: pulse 2s infinite;
+
     }
+
+
 
     @keyframes pulse {
+
       50% {
+
         box-shadow: 0 0 18px 5px #35ad5c40;
+
       }
+
     }
+
+
 
     /* Portal selection */
+
     .portals {
+
       width: 100%;
+
       margin: auto 0;
+
       padding: 75px 0 50px;
+
       animation: fadeUp 1s ease both;
+
     }
+
+
 
     .section-heading {
+
       margin-bottom: 34px;
+
       text-align: center;
+
     }
+
+
 
     .section-heading .eyebrow {
+
       margin-bottom: 12px;
+
       color: #388252;
+
       font-size: 11px;
+
       font-weight: 800;
+
       letter-spacing: 3px;
+
     }
+
+
 
     .section-heading h2 {
+
       color: #173e2a;
+
       font-size: clamp(27px, 3vw, 36px);
+
       font-weight: 800;
+
     }
+
+
 
     .section-heading .underline {
+
       width: 65px;
+
       height: 4px;
+
       margin: 17px auto 0;
+
       border-radius: 10px;
+
       background: linear-gradient(90deg, #8dd89a, #197943);
+
     }
+
+
 
     .portal-grid {
+
       display: grid;
+
       grid-template-columns: repeat(3, minmax(0, 1fr));
+
       gap: 24px;
+
     }
+
+
 
     .portal-card {
+
       position: relative;
+
       min-height: 300px;
+
       display: flex;
+
       flex-direction: column;
+
       padding: 30px;
+
       overflow: hidden;
+
       border: 1px solid #deebe0;
+
       border-radius: 24px;
+
       background: #ffffffd9;
+
       color: inherit;
+
       text-decoration: none;
+
       box-shadow: 0 12px 35px #174d2410;
+
       backdrop-filter: blur(15px);
+
       transition:
+
         transform 0.35s ease,
+
         box-shadow 0.35s ease,
+
         border-color 0.35s ease;
+
     }
+
+
 
     .portal-card::before {
+
       content: "";
+
       position: absolute;
+
       width: 165px;
+
       height: 165px;
+
       top: -70px;
+
       right: -65px;
+
       border-radius: 50%;
+
       background: #e1f3e4;
+
       transition: transform 0.45s ease;
+
     }
+
+
 
     .portal-card:hover {
+
       transform: translateY(-9px);
+
       border-color: #a6dcb1;
+
       box-shadow: 0 24px 45px #174d2420;
+
     }
+
+
 
     .portal-card:hover::before {
+
       transform: scale(1.5);
+
     }
+
+
 
     .portal-icon {
+
       position: relative;
+
       z-index: 1;
+
       width: 62px;
+
       height: 62px;
+
       display: grid;
+
       place-items: center;
+
       margin-bottom: 26px;
+
       border-radius: 18px;
+
       background: linear-gradient(145deg, #e1f7e5, #c8ebd0);
+
       color: #167541;
+
       transition: transform 0.35s ease;
+
     }
+
+
 
     .portal-card:hover .portal-icon {
+
       transform: rotate(-5deg) scale(1.08);
+
     }
+
+
 
     .portal-icon svg {
+
       width: 31px;
+
       height: 31px;
+
     }
+
+
 
     .portal-label {
+
       position: relative;
+
       margin-bottom: 10px;
+
       color: #64826d;
+
       font-size: 10px;
+
       font-weight: 800;
+
       letter-spacing: 2px;
+
     }
+
+
 
     .portal-card h3 {
+
       position: relative;
+
       margin-bottom: 13px;
+
       color: #173d29;
+
       font-size: 26px;
+
     }
+
+
 
     .portal-card p {
+
       position: relative;
+
       color: #718175;
+
       font-size: 13px;
+
       line-height: 1.8;
+
     }
+
+
 
     .portal-link {
+
       position: relative;
+
       display: flex;
+
       align-items: center;
+
       justify-content: space-between;
+
       gap: 10px;
+
       margin-top: auto;
+
       padding-top: 24px;
+
       color: #197844;
+
       font-size: 13px;
+
       font-weight: 800;
+
     }
+
+
 
     .arrow {
+
       font-size: 22px;
+
       transition: transform 0.3s ease;
+
     }
+
+
 
     .portal-card:hover .arrow {
+
       transform: translateX(6px);
+
     }
+
+
 
     /* Footer */
+
     .footer {
+
       padding-top: 20px;
+
       border-top: 1px solid #dcebdd;
+
       text-align: center;
+
       color: #829587;
+
       font-size: 12px;
+
       line-height: 1.9;
+
     }
+
+
 
     .footer span {
+
       color: #368451;
+
     }
+
+
 
     @media (max-width: 900px) {
+
       .page {
+
         padding: 25px 5% 25px;
+
       }
+
+
 
       .portals {
+
         padding: 65px 0 40px;
+
       }
+
+
 
       .portal-grid {
+
         grid-template-columns: 1fr 1fr;
+
       }
 
+
+
       .portal-card:last-child {
+
         grid-column: 1 / -1;
+
       }
+
     }
+
+
 
     @media (max-width: 580px) {
+
       .page {
+
         padding: 20px 18px 25px;
+
       }
+
+
 
       .brand {
+
         gap: 10px;
+
       }
+
+
 
       .brand-name {
+
         font-size: 28px;
+
       }
+
+
 
       .brand-subtitle {
+
         max-width: 205px;
+
         font-size: 8px;
+
         letter-spacing: 1px;
+
         line-height: 1.5;
+
       }
+
+
 
       .logo {
+
         width: 48px;
+
         height: 48px;
+
         border-radius: 14px;
+
       }
+
+
 
       .status {
+
         display: none;
+
       }
+
+
 
       .portals {
+
         padding: 65px 0 35px;
+
       }
+
+
 
       .section-heading h2 {
+
         font-size: 27px;
+
       }
+
+
 
       .portal-grid {
+
         grid-template-columns: 1fr;
+
         gap: 17px;
+
       }
+
+
 
       .portal-card:last-child {
+
         grid-column: auto;
+
       }
+
+
 
       .portal-card {
+
         min-height: 255px;
+
         padding: 25px;
+
       }
+
     }
+
+
 
     @media (prefers-reduced-motion: reduce) {
+
       *,
+
       *::before,
+
       *::after {
+
         animation: none !important;
+
         transition: none !important;
+
       }
+
     }
+
   </style>
+
 </head>
 
+
+
 <body>
+
   <!-- Animated green background -->
+
   <div class="background" aria-hidden="true">
+
     <div class="glow glow-one"></div>
+
     <div class="glow glow-two"></div>
+
     <div class="glow glow-three"></div>
 
+
+
     <span class="leaf">🍃</span>
+
     <span class="leaf">🌿</span>
+
     <span class="leaf">🍃</span>
+
     <span class="leaf">🌱</span>
+
     <span class="leaf">🍃</span>
+
     <span class="leaf">🌿</span>
+
   </div>
+
+
 
   <main class="page">
 
+
+
     <!-- GIFT branding -->
+
     <header class="navbar">
+
       <div class="brand">
+
         <div class="logo" aria-label="GIFT leaf logo">
+
           <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+
             <path
+
               d="M39 6C22 6 9 13 9 27c0 7 5 12 12 12C35 39 40 23 39 6Z"
+
               fill="#B7F0A8"
+
             />
+
             <path
+
               d="M7 42C14 29 22 21 34 13"
+
               stroke="#FFFFFF"
+
               stroke-width="3.2"
+
               stroke-linecap="round"
+
             />
+
             <path
+
               d="M19 28c-1-5-5-8-10-9 0 7 3 11 9 12"
+
               fill="#6BD17B"
+
             />
+
           </svg>
+
         </div>
+
+
 
         <div>
+
           <div class="brand-name">GIFT</div>
+
           <div class="brand-subtitle">
+
             GREEN INSIGHTS FOR FINANCE &amp; TOMORROW
+
           </div>
+
         </div>
+
       </div>
+
+
 
       <div class="status">
+
         <span class="status-dot"></span>
+
         A Greener Financial Future
+
       </div>
+
     </header>
 
+
+
     <!-- Role selection -->
+
     <section class="portals">
+
       <div class="section-heading">
+
         <p class="eyebrow">GREEN CUSTOMER INSIGHTS PLATFORM</p>
+
         <h2>Choose Your Portal</h2>
+
         <div class="underline"></div>
+
       </div>
+
+
 
       <div class="portal-grid">
 
+
+
         <!-- Customer -->
+
         <a href="customer-login.html" class="portal-card">
+
           <div class="portal-icon">
+
             <svg viewBox="0 0 24 24" fill="none"
+
               stroke="currentColor" stroke-width="1.8"
+
               stroke-linecap="round" stroke-linejoin="round">
+
               <circle cx="12" cy="8" r="4"></circle>
+
               <path d="M4 21v-2a8 8 0 0 1 16 0v2"></path>
+
             </svg>
+
           </div>
+
+
 
           <div class="portal-label">PERSONAL BANKING</div>
+
           <h3>Customer</h3>
+
           <p>
+
             Explore green financial products and understand your
+
             banking activity and sustainability impact.
+
           </p>
 
+
+
           <div class="portal-link">
+
             Enter Customer Portal
+
             <span class="arrow">→</span>
+
           </div>
+
         </a>
+
+
 
         <!-- Bank -->
-        <a href="business.html" class="portal-card">
+
+        <a href="bank-login.html" class="portal-card">
+
           <div class="portal-icon">
+
             <svg viewBox="0 0 24 24" fill="none"
+
               stroke="currentColor" stroke-width="1.8"
+
               stroke-linecap="round" stroke-linejoin="round">
+
               <path d="M3 21h18M5 21V9m4 12V9m6 12V9m4 12V9"></path>
+
               <path d="M3 9h18L12 3 3 9Z"></path>
+
               <path d="M2 6h20"></path>
+
             </svg>
+
           </div>
+
+
 
           <div class="portal-label">BUSINESS BANKING</div>
+
           <h3>Bank</h3>
+
           <p>
+
             Review customer opportunities, explore green product
+
             interest, and understand banking trends.
+
           </p>
 
+
+
           <div class="portal-link">
+
             Enter Bank Portal
+
             <span class="arrow">→</span>
+
           </div>
+
         </a>
+
+
 
         <!-- Lloyds Officer -->
-        <a href="officer.html" class="portal-card">
+
+        <a href="officer-login.html" class="portal-card">
+
           <div class="portal-icon">
+
             <svg viewBox="0 0 24 24" fill="none"
+
               stroke="currentColor" stroke-width="1.8"
+
               stroke-linecap="round" stroke-linejoin="round">
+
               <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"></path>
+
               <path d="m9 12 2 2 4-4"></path>
+
             </svg>
+
           </div>
+
+
 
           <div class="portal-label">ADMINISTRATION &amp; OVERSIGHT</div>
+
           <h3>Lloyds Officer</h3>
+
           <p>
+
             Monitor associated banks, review customer outcomes,
+
             and oversee sustainable banking activity.
+
           </p>
 
+
+
           <div class="portal-link">
+
             Enter Officer Portal
+
             <span class="arrow">→</span>
+
           </div>
+
         </a>
 
+
+
       </div>
+
     </section>
 
+
+
     <footer class="footer">
+
       <span>🌿</span>
+
       GIFT Customer Insights Platform
+
       <br>
+
       Sustainable banking starts with better insights.
+
     </footer>
 
+
+
   </main>
+
 </body>
+
 </html>

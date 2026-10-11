@@ -1,110 +1,173 @@
-```javascript
+
+// ========================================
+// GIFT EMPLOYEE LOGIN
+// ========================================
+
+// Flask backend URL
+const API_URL = "http://localhost:5000";
+
+
+// Get HTML elements
 const loginForm = document.getElementById("loginForm");
+
 const identifierInput = document.getElementById("identifier");
+
 const passwordInput = document.getElementById("password");
-const togglePassword = document.getElementById("togglePassword");
+
 const loginButton = document.getElementById("loginButton");
+
 const buttonText = document.getElementById("buttonText");
+
 const loginMessage = document.getElementById("loginMessage");
 
-// Clear login fields when opening or returning to this page.
-// Browser password managers may still override this behavior.
-function resetLoginForm() {
-    loginForm.reset();
-    identifierInput.value = "";
-    passwordInput.value = "";
-    passwordInput.type = "password";
-    togglePassword.textContent = "Show";
-    togglePassword.setAttribute("aria-label", "Show password");
-    loginMessage.textContent = "";
-    loginButton.disabled = false;
-    buttonText.textContent = "Sign In";
-}
+const togglePassword = document.getElementById("togglePassword");
 
-window.addEventListener("pageshow", resetLoginForm);
 
-// Show / hide password
-togglePassword.addEventListener("click", () => {
-    const showPassword = passwordInput.type === "password";
+// ========================================
+// SHOW / HIDE PASSWORD
+// ========================================
 
-    passwordInput.type = showPassword ? "text" : "password";
-    togglePassword.textContent = showPassword ? "Hide" : "Show";
-    togglePassword.setAttribute(
-        "aria-label",
-        showPassword ? "Hide password" : "Show password"
-    );
-});
+togglePassword.addEventListener("click", function () {
 
-// Clear messages while typing
-identifierInput.addEventListener("input", () => {
-    loginMessage.textContent = "";
-});
+    if (passwordInput.type === "password") {
 
-passwordInput.addEventListener("input", () => {
-    loginMessage.textContent = "";
-});
+        passwordInput.type = "text";
 
-// Submit login
-loginForm.addEventListener("submit", async (event) => {
-    event.preventDefault();
+        togglePassword.textContent = "Hide";
 
-    loginMessage.textContent = "";
+        togglePassword.setAttribute(
+            "aria-label",
+            "Hide password"
+        );
 
-    const identifier = identifierInput.value.trim();
-    const password = passwordInput.value;
+    } else {
 
-    if (!identifier || !password) {
-        loginMessage.textContent = "Please enter your ID and password.";
-        return;
+        passwordInput.type = "password";
+
+        togglePassword.textContent = "Show";
+
+        togglePassword.setAttribute(
+            "aria-label",
+            "Show password"
+        );
+
     }
 
+});
+
+
+// ========================================
+// EMPLOYEE LOGIN
+// ========================================
+
+loginForm.addEventListener("submit", async function (event) {
+
+    // Prevent normal form submission
+    event.preventDefault();
+
+
+    // Get entered values
+    const username = identifierInput.value.trim();
+
+    const password = passwordInput.value;
+
+
+    // Validate input
+    if (!username || !password) {
+
+        loginMessage.textContent =
+            "Please enter your username and password.";
+
+        loginMessage.className = "login-message error";
+
+        return;
+
+    }
+
+
+    // Disable button
     loginButton.disabled = true;
-    buttonText.textContent = "Signing in...";
+
+    buttonText.textContent = "Signing In...";
+
+    loginMessage.textContent = "";
+
+    loginMessage.className = "login-message";
+
 
     try {
-        // Keep this URL in sync with your existing backend route.
+
+        // Send login request to Flask
         const response = await fetch(
-            "http://127.0.0.1:5000/api/auth/login",
+            `${API_URL}/api/employee/login`,
             {
+
                 method: "POST",
+
                 headers: {
                     "Content-Type": "application/json"
                 },
+
                 body: JSON.stringify({
-                    username: identifier,
+
+                    username: username,
+
                     password: password
+
                 })
+
             }
         );
 
-        const data = await response.json().catch(() => ({}));
 
-        if (!response.ok || data.success !== true) {
+        // Convert response into JSON
+        const data = await response.json();
+
+
+        // Check login result
+        if (!response.ok || !data.success) {
+
             throw new Error(
-                data.message || "Invalid employee ID or password."
+                data.message || "Invalid employee credentials."
             );
+
         }
 
-        // Use the user object returned by your backend.
-        const user = data.user || {};
 
-        // Store the authenticated user's returned data.
-        // Do not store the password.
-        const safeUser = { ...user };
-        delete safeUser.password;
+        // Save employee information for this browser tab
+        sessionStorage.setItem(
+            "employee",
+            JSON.stringify(data.employee)
+        );
 
-        localStorage.setItem("gciBankUser", JSON.stringify(safeUser));
 
-        // Change this if your actual dashboard has another filename.
-        window.location.href = "business.html";
+        // Display success message
+        loginMessage.textContent =
+            "Login successful! Redirecting...";
+
+        loginMessage.className = "login-message success";
+
+
+        // Redirect to employee dashboard
+        window.location.href = "employee-dashboard.html";
+
 
     } catch (error) {
-        loginMessage.textContent =
-            error.message ||
-            "Unable to connect to the server. Please try again.";
 
+        console.error("Employee Login Error:", error);
+
+
+        loginMessage.textContent =
+            error.message || "Unable to connect to the server.";
+
+        loginMessage.className = "login-message error";
+
+
+        // Enable button again
         loginButton.disabled = false;
+
         buttonText.textContent = "Sign In";
+
     }
+
 });
-```

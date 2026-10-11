@@ -1,0 +1,6 @@
+category,transaction_count,total_spending,average_spending
+Energy,60,41810.0,696.83
+Groceries,60,44110.0,735.17
+Housing,30,30525.0,1017.5
+Shopping,60,44930.0,748.83
+Transport,30,26905.0,896.83

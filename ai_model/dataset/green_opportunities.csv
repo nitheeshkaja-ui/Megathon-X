@@ -1,0 +1,51 @@
+customer_id,green_product,spending_evidence,eligibility_status,eligibility_note
+10,Solar Finance,Higher-than-peer Energy spending: 1716.0,Needs verification,"Verify roof suitability, local solar generation and financing eligibility."
+11,Solar Finance,Higher-than-peer Energy spending: 1774.0,Needs verification,"Verify roof suitability, local solar generation and financing eligibility."
+12,Solar Finance,Higher-than-peer Energy spending: 1832.0,Needs verification,"Verify roof suitability, local solar generation and financing eligibility."
+13,Solar Finance,Higher-than-peer Energy spending: 1890.0,Needs verification,"Verify roof suitability, local solar generation and financing eligibility."
+14,Solar Finance,Higher-than-peer Energy spending: 1948.0,Needs verification,"Verify roof suitability, local solar generation and financing eligibility."
+15,Solar Finance,Higher-than-peer Energy spending: 2006.0,Needs verification,"Verify roof suitability, local solar generation and financing eligibility."
+16,Solar Finance,Higher-than-peer Energy spending: 2064.0,Needs verification,"Verify roof suitability, local solar generation and financing eligibility."
+17,Solar Finance,Higher-than-peer Energy spending: 2122.0,Needs verification,"Verify roof suitability, local solar generation and financing eligibility."
+17,EV Finance,Higher-than-peer Transport spending: 1335.0,Needs verification,Transport spending does not prove vehicle ownership. Verify vehicle suitability and lender eligibility.
+18,EV Finance,Higher-than-peer Transport spending: 1364.0,Needs verification,Transport spending does not prove vehicle ownership. Verify vehicle suitability and lender eligibility.
+19,EV Finance,Higher-than-peer Transport spending: 1393.0,Needs verification,Transport spending does not prove vehicle ownership. Verify vehicle suitability and lender eligibility.
+20,EV Finance,Higher-than-peer Transport spending: 1422.0,Needs verification,Transport spending does not prove vehicle ownership. Verify vehicle suitability and lender eligibility.
+21,EV Finance,Higher-than-peer Transport spending: 1451.0,Needs verification,Transport spending does not prove vehicle ownership. Verify vehicle suitability and lender eligibility.
+22,EV Finance,Higher-than-peer Transport spending: 1480.0,Needs verification,Transport spending does not prove vehicle ownership. Verify vehicle suitability and lender eligibility.
+25,Green Home Loan,Higher-than-peer Housing spending: 1293.0,Needs verification,Verify property details and eligibility for energy-efficient home improvements.
+26,Green Home Loan,Higher-than-peer Housing spending: 1322.0,Needs verification,Verify property details and eligibility for energy-efficient home improvements.
+27,Green Home Loan,Higher-than-peer Housing spending: 1351.0,Needs verification,Verify property details and eligibility for energy-efficient home improvements.
+28,Green Home Loan,Higher-than-peer Housing spending: 1380.0,Needs verification,Verify property details and eligibility for energy-efficient home improvements.
+29,Green Home Loan,Higher-than-peer Housing spending: 1409.0,Needs verification,Verify property details and eligibility for energy-efficient home improvements.
+30,Green Home Loan,Higher-than-peer Housing spending: 1438.0,Needs verification,Verify property details and eligibility for energy-efficient home improvements.
+1,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+2,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+3,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+4,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+5,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+6,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+7,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+8,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+9,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+10,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+11,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+12,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+13,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+14,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+15,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+16,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+17,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+18,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+19,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+20,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+21,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+22,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+23,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+24,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+25,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+26,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+27,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+28,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+29,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
+30,Go Paperless,General optional digital banking offer; not based on spending behaviour.,Needs verification,Check digital access and communication preferences.
